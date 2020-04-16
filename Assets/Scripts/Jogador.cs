@@ -25,23 +25,14 @@ public class Jogador : MonoBehaviour {
     private void Move(){
         int tamanhoTabuleiro = waypoints.Length - 1;
 
-        if (posicaoAtual <= tamanhoTabuleiro){
-            transform.position = Vector2.MoveTowards(transform.position,
-                                                     waypoints[posicaoAtual].transform.position,
-                                                     velocidadeMovimento * Time.deltaTime);
-
-            if (transform.position == waypoints[posicaoAtual].transform.position){
-                posicaoAtual += 1;
-            }
-        } else {
+        if (posicaoAtual > tamanhoTabuleiro)
             posicaoAtual = 0;
-            transform.position = Vector2.MoveTowards(transform.position,
-                                                     waypoints[posicaoAtual].transform.position,
-                                                     velocidadeMovimento * Time.deltaTime);
 
-            if (transform.position == waypoints[posicaoAtual].transform.position){
-                posicaoAtual += 1;
-            }
-        }
+        transform.position = Vector2.MoveTowards(transform.position,
+                                                    waypoints[posicaoAtual].transform.position,
+                                                    velocidadeMovimento * Time.deltaTime);
+
+        if (transform.position == waypoints[posicaoAtual].transform.position)
+            posicaoAtual += 1;
     }
 }
