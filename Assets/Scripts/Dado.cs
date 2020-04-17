@@ -30,7 +30,7 @@ public class Dado : MonoBehaviour {
     private void OnMouseDown(){
         if (coroutineDisponivel)
             // Inicia a rotina "RolarDado"
-            StartCoroutine("RolarDado"); 
+            StartCoroutine("RolarDado");
     }
 
     //Rotina de rolar o dado
@@ -53,6 +53,7 @@ public class Dado : MonoBehaviour {
         }
 
         GameControl.valorDado = (faceDadoRandom1 + 1) + (faceDadoRandom2 + 1);
+        //GameControl.valorDado = 10;
         if(vezJogador == 1){
             GameControl.MovePlayer(1);
         } else if(vezJogador == -1){
