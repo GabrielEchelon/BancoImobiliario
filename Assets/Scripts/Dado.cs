@@ -8,6 +8,7 @@ public class Dado : MonoBehaviour {
     private SpriteRenderer render1, render2;
     private int vezJogador = 1;
     private bool coroutineDisponivel = true;
+    private int dadosIguais = 0;
 
 	private void Start () {
         //Carrega os arquivo da pasta dadoFace
@@ -28,8 +29,8 @@ public class Dado : MonoBehaviour {
 
     //Método de quando o mouse clicar no dado
     private void OnMouseDown(){
+        // Inicia a rotina "RolarDado"
         if (coroutineDisponivel)
-            // Inicia a rotina "RolarDado"
             StartCoroutine("RolarDado");
     }
 
@@ -52,8 +53,10 @@ public class Dado : MonoBehaviour {
             yield return new WaitForSeconds(0.05f);
         }
 
-        GameControl.valorDado = (faceDadoRandom1 + 1) + (faceDadoRandom2 + 1);
-        //GameControl.valorDado = 10;
+        //GameControl.valorDado = (faceDadoRandom1 + 1) + (faceDadoRandom2 + 1);
+        VerificaDados((faceDadoRandom1 + 1), (faceDadoRandom2 + 1));
+
+        GameControl.valorDado = 10;
         if(vezJogador == 1){
             GameControl.MovePlayer(1);
         } else if(vezJogador == -1){
@@ -62,5 +65,18 @@ public class Dado : MonoBehaviour {
         
         vezJogador *= -1;
         coroutineDisponivel = true;
+    }
+
+    //Verifica quantas vezes os dados ficaram iguais seguidos
+    private void VerificaDados(int valorDado1, int valorDado2) {
+        if(valorDado1 == valorDado2) {
+            dadosIguais++;
+        }else {
+            dadosIguais = 0;
+        }
+
+        if(dadosIguais >= 3) {
+
+        }
     }
 }

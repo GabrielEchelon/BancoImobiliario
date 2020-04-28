@@ -29,10 +29,11 @@ public class Prisao : MonoBehaviour {
     }
 
     private void executaPrisao(Jogador jogador) {
-        jogador.transform.position = Vector2.MoveTowards(transform.position,
-                                                    jogador.waypoints[posicaoPrisao].transform.position,
-                                                    jogador.velocidadeMovimento * Time.deltaTime);
+        jogador.transform.position = Vector2.MoveTowards(jogador.transform.position,
+                                                jogador.waypoints[posicaoPrisao].transform.position,
+                                                jogador.velocidadeMovimento * Time.deltaTime);
 
+        jogador.movimentoPermitido = false;
 
     }
 }
