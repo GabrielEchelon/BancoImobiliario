@@ -27,8 +27,8 @@ public class Saldo : MonoBehaviour {
     }
 
     void Update(){
+        //Atualiza os saldos conforme o id do Jogador
         if (idJogador != 0L) {
-
             ExibeSaldos();
             ExibePatrimonios();
 

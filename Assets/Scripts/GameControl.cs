@@ -15,13 +15,16 @@ public class GameControl : MonoBehaviour {
 
 
     void Start () {
+        //Define o jogador que irá começar o jogo
         SetaVezJogador();
 
+        //Mantem o texto de "Jogador x venceu" até segunda chamada
         txtJogadorVencedor.gameObject.SetActive(false);
     }
 
     void Update(){
 
+        //Se o valor do dado mudar de zero, inicia o método de movimentação do jogador
         if(valorDado != 0) {
             MovePlayer();
         }
@@ -30,6 +33,7 @@ public class GameControl : MonoBehaviour {
 
     }
 
+    //Permite a movimentação do jogador, além de saber se ele concluiu o caminho ou não
     private void MovePlayer() {
         Jogador jogador = JogadorDaVez();
         if (!jogador.movimentoPermitido && posicaoAnterior == 0) {
@@ -50,6 +54,7 @@ public class GameControl : MonoBehaviour {
         }
     }
 
+    //Pega qual jogador está na vez de jogada
     private Jogador JogadorDaVez() {
         Jogador jogadorRetorno = null;
         foreach(Jogador jogador in jogadores) {
@@ -60,6 +65,7 @@ public class GameControl : MonoBehaviour {
         return jogadorRetorno;
     }
 
+    //Define a vez de jogada do jogador
     private void SetaVezJogador() {
         foreach (Jogador jogador in jogadores) {
             if (jogador.idJogador.Equals(vezJogador)) {
@@ -70,6 +76,7 @@ public class GameControl : MonoBehaviour {
         }
     }
 
+    //Vai para o próximo jogador poder jogar
     private void AtualizaVezJogador() {
         vezJogador++;
         if (vezJogador > jogadores.Length) {
@@ -77,6 +84,7 @@ public class GameControl : MonoBehaviour {
         }
     }
 
+    //Atualiza o valor do dado para o jogador poder continuar no tabuleiro depois de dar uma volta
     private void AtualizaDado() {
         Jogador jogador = JogadorDaVez();
         if(jogador.posicaoAtual == 0 && posicaoAnterior > 0) {

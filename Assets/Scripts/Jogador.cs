@@ -5,12 +5,11 @@ using UnityEngine.UI;
 
 public class Jogador : MonoBehaviour {
 
-    //Variaveis de Movimentação
     [SerializeField] public long idJogador = 0;//Identificação do Jogador
     public Transform[] waypoints; //Define quantidade de casas do tabuleiro
 
     [SerializeField] public float velocidadeMovimento = 5f; //Velocidade padrão de movimentação
-    public bool movimentoPermitido = false;
+    public bool movimentoPermitido = false; //Define se o jogador pode ou não se mexer
 
     [SerializeField] public int posicaoAtual = 0; //Casa atual do jogador
     [SerializeField] public int ultimaPosicao = 0; //Casa anterior que o jogador estava
@@ -21,24 +20,27 @@ public class Jogador : MonoBehaviour {
 
     public bool preso = false; //Identifica se esta preso ou não
 
-    private Saldo saldo;
+    private Saldo saldo; //Cria o saldo do jogador
 
     private void Start () {
         //Pega a posição da casa que está definida no index
         transform.position = waypoints[posicaoAtual].transform.position;
 
+        //Pega o objeto saldo do jogador
         saldo = GetComponent<Saldo>();
         saldo.idJogador = idJogador;
     }
 	 
 	private void Update () {
 
+        //Exibe o texto de "Sua Vez" para o jogador que está na vez
         if (vezJogador) {
             txtVezJogador.gameObject.SetActive(true);
         } else {
             txtVezJogador.gameObject.SetActive(false);
         }
 
+        //Movimenta o jogador após rolar os dados
         if(movimentoPermitido) {
             MoveJogador();
         }
