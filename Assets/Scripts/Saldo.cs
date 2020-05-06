@@ -5,45 +5,83 @@ using UnityEngine.UI;
 
 public class Saldo : MonoBehaviour {
 
-    private static GameObject txtSaldoPlayer1, txtSaldoPlayer2;
-    private static GameObject txtPatrimonioPlayer1, txtPatrimonioPlayer2;
+    [SerializeField] private Text txtSaldoPlayer; //Componente que irá exibir o saldo do jogador
+    [SerializeField] private Text txtPatrimonioPlayer; //Componente que irá exibir o patrimonio do jogador
 
-    [SerializeField] public double saldoPlayer1 = 1500000d;
-    [SerializeField] public double saldoPlayer2 = 1500000d;
+    [SerializeField] public float saldoPlayer = 0f; //Saldo do player
+    [SerializeField] public float patrimonioPlayer = 0f; //Patrimonio do player
+    [SerializeField] public float valorDebitoCredito = 0f; //Valor que irá alterar o saldo do player
+    [HideInInspector] public long idJogador = 0L; //Identificação do jogador
 
-    [SerializeField] public double patrimonioPlayer1 = 0d;
-    [SerializeField] public double patrimonioPlayer2 = 0d;
+    private bool coroutineSaldo = true; //Define se é para atualizar o saldo
 
     void Start(){
-        //Encontra os objetos de saldo
-        txtSaldoPlayer1 = GameObject.Find("SaldoPlayer1");
-        txtSaldoPlayer2 = GameObject.Find("SaldoPlayer2");
 
-        //Encontra os objetos de patrimonio
-        txtPatrimonioPlayer1 = GameObject.Find("PatrimonioPlayer1");
-        txtPatrimonioPlayer2 = GameObject.Find("PatrimonioPlayer2");
-
+        //Previne que o saldo e patrimonio comecem negativos
+        if(saldoPlayer <= 0f) {
+            saldoPlayer = 1500000f;
+        }
+        if(patrimonioPlayer < 0f) {
+            patrimonioPlayer = 0f;
+        }
     }
 
     void Update(){
-        exibeSaldos();
-        exibePatrimonios();
+        if (idJogador != 0L) {
+
+            ExibeSaldos();
+            ExibePatrimonios();
+
+            if (coroutineSaldo && valorDebitoCredito != 0f) {
+                StartCoroutine(AtualizaSaldos(valorDebitoCredito));
+            }
+
+        }
     }
 
     //Exibe o valor dos saldos na tela
-    private void exibeSaldos() {
-        txtSaldoPlayer1.GetComponent<Text>().text = "R$ " + saldoPlayer1.ToString("#,#");
-        txtSaldoPlayer2.GetComponent<Text>().text = "R$ " + saldoPlayer2.ToString("#,#");
+    private void ExibeSaldos() {
+        txtSaldoPlayer.text = "R$ " + saldoPlayer.ToString("#,#");
     }
 
     //Exibe o valor dos patrimônios na tela
-    private void exibePatrimonios() {
-        if (patrimonioPlayer1 > 0d) {
-            txtPatrimonioPlayer1.GetComponent<Text>().text = "R$ " + saldoPlayer1.ToString("#,#");
+    private void ExibePatrimonios() {
+        if (patrimonioPlayer > 0d) {
+            txtPatrimonioPlayer.gameObject.SetActive(true);
+            txtPatrimonioPlayer.text = "R$ " + saldoPlayer.ToString("#,#");
+        } else {
+            txtPatrimonioPlayer.gameObject.SetActive(false);
+        }
+    }
+
+    //Coroutine que atualiza o valor do saldo e realiza animação dos números
+    public IEnumerator AtualizaSaldos(float valorAlteracao) {
+
+        coroutineSaldo = false; 
+
+        float valorDesejado = saldoPlayer + valorAlteracao;
+
+        if (saldoPlayer != valorDesejado) {
+            if(saldoPlayer < valorDesejado) {
+                for (float i = saldoPlayer; i < valorDesejado; i = saldoPlayer) {
+                    saldoPlayer += 1000.0f;
+                    ExibeSaldos();
+
+                    yield return new WaitForSecondsRealtime(0.00005f);
+
+                }
+            } else {
+                for (float i = saldoPlayer; i > valorDesejado; i = saldoPlayer) {
+                    saldoPlayer -= 1000.0f;
+                    ExibeSaldos();
+
+                    yield return new WaitForSeconds(0.00005f);
+
+                }
+            }
         }
 
-        if (patrimonioPlayer2 > 0d) {
-            txtPatrimonioPlayer2.GetComponent<Text>().text = "R$ " + saldoPlayer2.ToString("#,#");
-        }
+        valorDebitoCredito = 0f;
+        coroutineSaldo = true;
     }
 }

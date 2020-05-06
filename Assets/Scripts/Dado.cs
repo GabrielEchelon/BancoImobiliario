@@ -3,24 +3,20 @@ using UnityEngine;
 
 public class Dado : MonoBehaviour {
 
-    private static GameObject dado1, dado2;
     private Sprite[] dadoFace;
     private SpriteRenderer render1, render2;
-    private int vezJogador = 1;
     private bool coroutineDisponivel = true;
     private int dadosIguais = 0;
+
+    [SerializeField] private GameControl gameControl;
 
 	private void Start () {
         //Carrega os arquivo da pasta dadoFace
         dadoFace = Resources.LoadAll<Sprite>("dadoFace/"); 
 
-        //Encontra os objetos "Dado1" e "Dado2"
-        dado1 = GameObject.Find("Dado1"); 
-        dado2 = GameObject.Find("Dado2"); 
-
         //Carrega os componentes dos dados
-        render1 = dado1.GetComponent<SpriteRenderer>();
-        render2 = dado2.GetComponent<SpriteRenderer>(); 
+        render1 = GameObject.Find("Dado1").GetComponent<SpriteRenderer>();
+        render2 = GameObject.Find("Dado2").GetComponent<SpriteRenderer>(); 
 
         //Inicia os dados na face de número 6
         render1.sprite = dadoFace[5]; 
@@ -31,7 +27,7 @@ public class Dado : MonoBehaviour {
     private void OnMouseDown(){
         // Inicia a rotina "RolarDado"
         if (coroutineDisponivel)
-            StartCoroutine("RolarDado");
+            StartCoroutine(RolarDado());
     }
 
     //Rotina de rolar o dado
@@ -53,17 +49,9 @@ public class Dado : MonoBehaviour {
             yield return new WaitForSeconds(0.05f);
         }
 
-        //GameControl.valorDado = (faceDadoRandom1 + 1) + (faceDadoRandom2 + 1);
+        gameControl.valorDado = (faceDadoRandom1 + 1) + (faceDadoRandom2 + 1);
         VerificaDados((faceDadoRandom1 + 1), (faceDadoRandom2 + 1));
 
-        GameControl.valorDado = 10;
-        if(vezJogador == 1){
-            GameControl.MovePlayer(1);
-        } else if(vezJogador == -1){
-            GameControl.MovePlayer(2);
-        }
-        
-        vezJogador *= -1;
         coroutineDisponivel = true;
     }
 

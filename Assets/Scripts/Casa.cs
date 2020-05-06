@@ -20,8 +20,8 @@ public class Casa : MonoBehaviour
     
     void Start(){
 
-        player1 = GameObject.Find("Player1");
-        player2 = GameObject.Find("Player2");
+        player1 = GameObject.Find("Jogador1");
+        player2 = GameObject.Find("Jogador2");
         
     }
 
@@ -30,10 +30,5 @@ public class Casa : MonoBehaviour
         player1Mov = player1.GetComponent<Jogador>();
         player2Mov = player2.GetComponent<Jogador>();
 
-        if((player1Mov.posicaoAtual == numero && player1Mov.movimentoPermitido == false) 
-        || (player2Mov.posicaoAtual == numero && player2Mov.movimentoPermitido == false)){
-            Debug.Log(nome + ", " + numero + ", valor R$" + valor + ". Dono: " + dono);
-            Debug.Log("Empresa: " + empresa + ". " + "Compravel: " + compravel + ". Sorte Ou Revés: " + sorteReves);
-        }
     }
 }

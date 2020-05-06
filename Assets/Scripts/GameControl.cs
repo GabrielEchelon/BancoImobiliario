@@ -1,83 +1,87 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class GameControl : MonoBehaviour {
 
-    private static GameObject textoJogadorVencedor, textoVezPlayer1, textoVezPlayer2;
-    private static GameObject playerObj1, playerObj2;
-    public static int valorDado = 0;
-    public static int posicaoPlayer1 = 0;
-    public static int posicaoPlayer2 = 0;
+    [SerializeField] private Text txtJogadorVencedor; //Texto que indica qual jogador ganhou a partida
 
-    private Jogador jogador1;
-    private Jogador jogador2;
+    [SerializeField] private Jogador[] jogadores; //Array de jogadores, caso queira mais de dois, é só por um novo icone e definir no gameControl (Dentro do unity)
+    private int posicaoAnterior = 0;
+
+    [SerializeField] public long vezJogador = 1L; //Define a vez de qual jogador, começando sempre pelo primeiro
+
+    public int valorDado = 0; //Recebe o valor do dado para movimentação
+
 
     void Start () {
+        SetaVezJogador();
 
-        textoJogadorVencedor = GameObject.Find("TextoJogadorVencedor");
-        textoVezPlayer1 = GameObject.Find("TextoVezPlayer1");
-        textoVezPlayer2 = GameObject.Find("TextoVezPlayer2");
-
-        playerObj1 = GameObject.Find("Player1");
-        playerObj2 = GameObject.Find("Player2");
-
-        playerObj1.GetComponent<Jogador>().movimentoPermitido = false;
-        playerObj2.GetComponent<Jogador>().movimentoPermitido = false;
-
-        textoJogadorVencedor.gameObject.SetActive(false);
-        textoVezPlayer1.gameObject.SetActive(true);
-        textoVezPlayer2.gameObject.SetActive(false);
+        txtJogadorVencedor.gameObject.SetActive(false);
     }
 
     void Update(){
 
-        jogador1 = playerObj1.GetComponent<Jogador>();
-        jogador2 = playerObj2.GetComponent<Jogador>();
+        if(valorDado != 0) {
+            MovePlayer();
+        }
 
         AtualizaDado();
-        SetaVezJogador();
 
     }
 
-    public static void MovePlayer(int playerToMove){
-        switch (playerToMove) { 
-            case 1:
-                playerObj1.GetComponent<Jogador>().movimentoPermitido = true;
-                break;
+    private void MovePlayer() {
+        Jogador jogador = JogadorDaVez();
+        if (!jogador.movimentoPermitido && posicaoAnterior == 0) {
+            posicaoAnterior = jogador.posicaoAtual;
+        }
 
-            case 2:
-                playerObj2.GetComponent<Jogador>().movimentoPermitido = true;
-                break;
+        if(jogador.posicaoAtual <= posicaoAnterior + valorDado) {
+            jogador.movimentoPermitido = true;
+        } else {
+            jogador.movimentoPermitido = false;
+
+            posicaoAnterior = 0;
+            valorDado = 0;
+
+            AtualizaVezJogador();
+            SetaVezJogador();
+
         }
     }
 
-    // Método que verifica se é a vez de certo jogador ou não
-    private void SetaVezJogador(){
-        if (jogador1.posicaoAtual > posicaoPlayer1 + valorDado){
-            jogador1.movimentoPermitido = false;
-            textoVezPlayer1.gameObject.SetActive(false);
-            textoVezPlayer2.gameObject.SetActive(true);
-            posicaoPlayer1 = jogador1.posicaoAtual - 1;
+    private Jogador JogadorDaVez() {
+        Jogador jogadorRetorno = null;
+        foreach(Jogador jogador in jogadores) {
+            if (jogador.idJogador.Equals(vezJogador)) {
+                jogadorRetorno = jogador;
+            }
         }
+        return jogadorRetorno;
+    }
 
-        if (jogador2.posicaoAtual > posicaoPlayer2 + valorDado){
-            jogador2.movimentoPermitido = false;
-            textoVezPlayer2.gameObject.SetActive(false);
-            textoVezPlayer1.gameObject.SetActive(true);
-            posicaoPlayer2 = jogador2.posicaoAtual - 1;
+    private void SetaVezJogador() {
+        foreach (Jogador jogador in jogadores) {
+            if (jogador.idJogador.Equals(vezJogador)) {
+                jogador.vezJogador = true;
+            } else {
+                jogador.vezJogador = false;
+            }
         }
     }
-    
-    //Atualiza o valor do dado após cruzar linha inicial
-    private void AtualizaDado(){
-        if (jogador1.posicaoAtual == 0 && posicaoPlayer1 > 0){
-            valorDado = valorDado - ((jogador1.waypoints.Length - 1) - posicaoPlayer1);
-            posicaoPlayer1 = jogador1.posicaoAtual;
 
-        }else if (jogador2.posicaoAtual == 0 && posicaoPlayer2 > 0){
-            valorDado = valorDado - ((jogador2.waypoints.Length - 1) - posicaoPlayer2);
-            posicaoPlayer2 = jogador2.posicaoAtual;
+    private void AtualizaVezJogador() {
+        vezJogador++;
+        if (vezJogador > jogadores.Length) {
+            vezJogador = 1L;
+        }
+    }
 
+    private void AtualizaDado() {
+        Jogador jogador = JogadorDaVez();
+        if(jogador.posicaoAtual == 0 && posicaoAnterior > 0) {
+            valorDado -= ((jogador.waypoints.Length - 1) - posicaoAnterior);
+            posicaoAnterior = jogador.posicaoAtual - 1;
         }
     }
 }

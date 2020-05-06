@@ -9,31 +9,31 @@ public class Prisao : MonoBehaviour {
     private bool preso1, preso2;
 
     void Start(){
-        jogador1 = GameObject.Find("Player1").GetComponent<Jogador>();
-        jogador2 = GameObject.Find("Player2").GetComponent<Jogador>();
+        jogador1 = GameObject.Find("Jogador1").GetComponent<Jogador>();
+        jogador2 = GameObject.Find("Jogador2").GetComponent<Jogador>();
 
     }
 
     void Update(){
-        verificaJogadores();
+        VerificaJogadores();
     }
 
-    private void verificaJogadores() {
+    private void VerificaJogadores() {
         if (jogador1.preso) {
-            executaPrisao(jogador1);
+            ExecutaPrisao(jogador1);
 
         } else if (jogador2.preso) {
-            executaPrisao(jogador2);
+            ExecutaPrisao(jogador2);
 
         }
     }
 
-    private void executaPrisao(Jogador jogador) {
+    private void ExecutaPrisao(Jogador jogador) {
         jogador.transform.position = Vector2.MoveTowards(jogador.transform.position,
                                                 jogador.waypoints[posicaoPrisao].transform.position,
                                                 jogador.velocidadeMovimento * Time.deltaTime);
 
-        jogador.movimentoPermitido = false;
+        jogador.vezJogador = false;
 
     }
 }
