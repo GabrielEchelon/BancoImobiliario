@@ -401,8 +401,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 928.82764, y: 125.824936}
-  m_SizeDelta: {x: 80, y: 23.89}
+  m_AnchoredPosition: {x: 1401.9999, y: -30}
+  m_SizeDelta: {x: 165, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &182598794
 MonoBehaviour:
@@ -426,7 +426,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 24beb3137afcd494fb2286f6dd0481b5, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -673,8 +673,8 @@ MonoBehaviour:
   - {fileID: 2140225171}
   velocidadeMovimento: 5
   movimentoPermitido: 0
-  posicaoAtual: 35
-  ultimaPosicao: 35
+  posicaoAtual: 0
+  ultimaPosicao: 0
   txtVezJogador: {fileID: 1402944665}
   vezJogador: 0
   preso: 0
@@ -1205,8 +1205,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -130.1, y: 25}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: -341, y: 75}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &627970383
 MonoBehaviour:
@@ -1475,8 +1475,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1036.8275, y: 440.20578}
-  m_SizeDelta: {x: 100, y: 23.89}
+  m_AnchoredPosition: {x: 1706.1, y: 629}
+  m_SizeDelta: {x: 335, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &737179342
 MonoBehaviour:
@@ -1500,7 +1500,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 24beb3137afcd494fb2286f6dd0481b5, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 3
@@ -1655,7 +1655,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 8f103bff6b3bfd043a90ac7f4d40525e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f6ce5484bdc2563498007fbcbed66189, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1772,11 +1772,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtJogadorVencedor: {fileID: 2087196199}
+  prisao: {fileID: 1554189494}
   jogadores:
   - {fileID: 355938323}
   - {fileID: 576203303}
   vezJogador: 1
   valorDado: 0
+  dadosIguais: 0
 --- !u!4 &874268003
 Transform:
   m_ObjectHideFlags: 0
@@ -1825,8 +1827,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -130.1, y: -25}
-  m_SizeDelta: {x: 50, y: 50}
+  m_AnchoredPosition: {x: -341.00006, y: -75}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &917670472
 MonoBehaviour:
@@ -2337,7 +2339,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -2481,8 +2483,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1036.8276, y: 477.80414}
-  m_SizeDelta: {x: 100, y: 23.89}
+  m_AnchoredPosition: {x: 1706.1, y: 755}
+  m_SizeDelta: {x: 335, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1374911425
 MonoBehaviour:
@@ -2506,7 +2508,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 24beb3137afcd494fb2286f6dd0481b5, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 3
@@ -2558,8 +2560,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 928.82764, y: 405.18497}
-  m_SizeDelta: {x: 80, y: 23.89}
+  m_AnchoredPosition: {x: 1402, y: 550}
+  m_SizeDelta: {x: 165, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1402944665
 MonoBehaviour:
@@ -2583,7 +2585,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 24beb3137afcd494fb2286f6dd0481b5, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
@@ -2690,6 +2692,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46b1b87e68a652049972d12877ca0bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jogadorDaVez: {fileID: 0}
+  posicaoPrisao: 10
+  posicaoVaParaPrisao: 30
 --- !u!4 &1554189495
 Transform:
   m_ObjectHideFlags: 0
@@ -2738,8 +2743,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1036.8275, y: 90.80418}
-  m_SizeDelta: {x: 100, y: 23.89}
+  m_AnchoredPosition: {x: 1709.2, y: -163}
+  m_SizeDelta: {x: 335, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1621478625
 MonoBehaviour:
@@ -2763,7 +2768,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 24beb3137afcd494fb2286f6dd0481b5, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 3
@@ -2943,7 +2948,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 24beb3137afcd494fb2286f6dd0481b5, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 3
@@ -2977,8 +2982,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1036.8276, y: 53.20575}
-  m_SizeDelta: {x: 100, y: 23.89}
+  m_AnchoredPosition: {x: 1709.2, y: -302.99997}
+  m_SizeDelta: {x: 335, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1789262372
 GameObject:

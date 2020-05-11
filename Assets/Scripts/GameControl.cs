@@ -6,6 +6,8 @@ public class GameControl : MonoBehaviour {
 
     [SerializeField] private Text txtJogadorVencedor; //Texto que indica qual jogador ganhou a partida
 
+    [SerializeField] private Prisao prisao; //Define as configuracoes da prisão
+
     [SerializeField] private Jogador[] jogadores; //Array de jogadores, caso queira mais de dois, é só por um novo icone e definir no gameControl (Dentro do unity)
     private int posicaoAnterior = 0;
 
@@ -13,19 +15,28 @@ public class GameControl : MonoBehaviour {
 
     public int valorDado = 0; //Recebe o valor do dado para movimentação
 
+    public bool dadosIguais = false; //Se o jogador tirar dados iguais, jogará novamente
+    private int dadosPrisao = 0; //Se o jogador tirar dados iguais três vezes seguidas, jogador estará preso
 
-    void Start () {
+
+    void Start() {
         //Define o jogador que irá começar o jogo
         SetaVezJogador();
+
+        //Verificação necessária para a prisão não ficar com um jogador null
+        prisao.jogadorDaVez = JogadorDaVez();
 
         //Mantem o texto de "Jogador x venceu" até segunda chamada
         txtJogadorVencedor.gameObject.SetActive(false);
     }
 
-    void Update(){
+    void Update() {
 
-        //Se o valor do dado mudar de zero, inicia o método de movimentação do jogador
-        if(valorDado != 0) {
+        if (valorDado != 0) {
+            VerificaPrisao(JogadorDaVez());
+        }
+
+        if (valorDado != 0) {
             MovePlayer();
         }
 
@@ -33,46 +44,76 @@ public class GameControl : MonoBehaviour {
 
     }
 
-    //Permite a movimentação do jogador, além de saber se ele concluiu o caminho ou não
+    public void VerificaPrisao(Jogador jogador) {
+        if (!jogador.preso) {
+            if ((jogador.posicaoAtual == prisao.posicaoVaParaPrisao) || (dadosPrisao >= 3)) {
+                jogador.preso = true;
+                prisao.jogadorDaVez = jogador;
+                FinalizaVezJogador(jogador);
+            }
+        } else {
+            FinalizaVezJogadorPreso(jogador);
+        }
+    }
+
+    //Inicia a movimentação do jogador, além de saber se ele concluiu o caminho ou não
     private void MovePlayer() {
         Jogador jogador = JogadorDaVez();
         if (!jogador.movimentoPermitido && posicaoAnterior == 0) {
             posicaoAnterior = jogador.posicaoAtual;
         }
 
-        if(jogador.posicaoAtual <= posicaoAnterior + valorDado) {
+        if (jogador.posicaoAtual <= posicaoAnterior + valorDado) {
             jogador.movimentoPermitido = true;
+        } else {
+            if (jogador.posicaoAtual != 0) {
+                jogador.posicaoAtual -= 1;
+            }
+            FinalizaVezJogador(jogador);
+        }
+    }
+
+    private void FinalizaVezJogador(Jogador jogador) {
+        jogador.movimentoPermitido = false;
+
+        posicaoAnterior = 0;
+        valorDado = 0;
+
+        if (dadosIguais) {
+            dadosPrisao++;
+        } else {
+            AtualizaVezJogador();
+            SetaVezJogador();
+            dadosPrisao = 0;
+        }
+    }
+
+    private void FinalizaVezJogadorPreso(Jogador jogador) {
+
+        if (dadosIguais) {
+            jogador.preso = false;
+            prisao.jogadorDaVez = jogador;
         } else {
             jogador.movimentoPermitido = false;
 
             posicaoAnterior = 0;
             valorDado = 0;
+            dadosPrisao = 0;
 
             AtualizaVezJogador();
             SetaVezJogador();
-
         }
     }
 
     //Pega qual jogador está na vez de jogada
-    private Jogador JogadorDaVez() {
-        Jogador jogadorRetorno = null;
-        foreach(Jogador jogador in jogadores) {
-            if (jogador.idJogador.Equals(vezJogador)) {
-                jogadorRetorno = jogador;
-            }
-        }
-        return jogadorRetorno;
+    public Jogador JogadorDaVez() {
+        return Array.Find(jogadores, j => j.vezJogador);
     }
 
     //Define a vez de jogada do jogador
     private void SetaVezJogador() {
         foreach (Jogador jogador in jogadores) {
-            if (jogador.idJogador.Equals(vezJogador)) {
-                jogador.vezJogador = true;
-            } else {
-                jogador.vezJogador = false;
-            }
+            jogador.vezJogador = (jogador.idJogador.Equals(vezJogador));
         }
     }
 
@@ -87,7 +128,7 @@ public class GameControl : MonoBehaviour {
     //Atualiza o valor do dado para o jogador poder continuar no tabuleiro depois de dar uma volta
     private void AtualizaDado() {
         Jogador jogador = JogadorDaVez();
-        if(jogador.posicaoAtual == 0 && posicaoAnterior > 0) {
+        if (jogador.posicaoAtual == 0 && posicaoAnterior > 0) {
             valorDado -= ((jogador.waypoints.Length - 1) - posicaoAnterior);
             posicaoAnterior = jogador.posicaoAtual - 1;
         }

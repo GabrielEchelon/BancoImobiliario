@@ -12,7 +12,7 @@ public class Jogador : MonoBehaviour {
     public bool movimentoPermitido = false; //Define se o jogador pode ou não se mexer
 
     [SerializeField] public int posicaoAtual = 0; //Casa atual do jogador
-    [SerializeField] public int ultimaPosicao = 0; //Casa anterior que o jogador estava
+    [HideInInspector] public int ultimaPosicao = 0; //Casa anterior que o jogador estava
 
 
     [SerializeField] public Text txtVezJogador; //Texto que indica se é a vez do jogador
@@ -43,6 +43,10 @@ public class Jogador : MonoBehaviour {
         //Movimenta o jogador após rolar os dados
         if(movimentoPermitido) {
             MoveJogador();
+        }
+
+        if (!movimentoPermitido && posicaoAtual == 30) {
+            preso = true;
         }
 
     }

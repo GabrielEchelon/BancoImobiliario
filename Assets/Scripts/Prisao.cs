@@ -4,36 +4,26 @@ using UnityEngine;
 
 public class Prisao : MonoBehaviour {
 
-    private static Jogador jogador1, jogador2;
-    private int posicaoPrisao = 10;
-    private bool preso1, preso2;
-
-    void Start(){
-        jogador1 = GameObject.Find("Jogador1").GetComponent<Jogador>();
-        jogador2 = GameObject.Find("Jogador2").GetComponent<Jogador>();
-
-    }
+    [HideInInspector] public Jogador jogadorDaVez;
+    [SerializeField] public int posicaoPrisao = 10;
+    [SerializeField] public int posicaoVaParaPrisao = 30;
 
     void Update(){
-        VerificaJogadores();
-    }
-
-    private void VerificaJogadores() {
-        if (jogador1.preso) {
-            ExecutaPrisao(jogador1);
-
-        } else if (jogador2.preso) {
-            ExecutaPrisao(jogador2);
-
+        if(jogadorDaVez.preso && !jogadorDaVez.movimentoPermitido && jogadorDaVez.posicaoAtual != posicaoPrisao) {
+            ExecutaPrisao(jogadorDaVez);
         }
     }
 
-    private void ExecutaPrisao(Jogador jogador) {
+    public void ExecutaPrisao(Jogador jogador) {
         jogador.transform.position = Vector2.MoveTowards(jogador.transform.position,
                                                 jogador.waypoints[posicaoPrisao].transform.position,
                                                 jogador.velocidadeMovimento * Time.deltaTime);
 
-        jogador.vezJogador = false;
+        if (jogador.transform.position == jogador.waypoints[posicaoPrisao].transform.position) {
+            jogador.posicaoAtual = 10;
+        }
+
+        jogadorDaVez.preso = true;
 
     }
 }
