@@ -48,17 +48,20 @@ public class Dado : MonoBehaviour {
             yield return new WaitForSeconds(0.05f);
         }
 
-        //gameControl.dadosIguais = VerificaDados((faceDadoRandom1 + 1), (faceDadoRandom2 + 1));
-        gameControl.dadosIguais = VerificaDados(1, 1);
-
-        //gameControl.valorDado = (faceDadoRandom1 + 1) + (faceDadoRandom2 + 1);
-        gameControl.valorDado = 2;
+        VerificaDados((faceDadoRandom1 + 1), (faceDadoRandom2 + 1));
+        gameControl.valorDado = (faceDadoRandom1 + 1) + (faceDadoRandom2 + 1);
 
         coroutineDisponivel = true;
     }
 
     //Verifica quantas vezes os dados ficaram iguais seguidos
-    private bool VerificaDados(int valorDado1, int valorDado2) {
-        return valorDado1 == valorDado2;
+    private void VerificaDados(int valorDado1, int valorDado2) {
+        if(valorDado1 == valorDado2) {
+            gameControl.dadosIguais = true;
+            gameControl.dadosPrisao += 1;
+        } else {
+            gameControl.dadosIguais = false;
+            gameControl.dadosPrisao = 0;
+        }   
     }
 }

@@ -16,7 +16,7 @@ public class GameControl : MonoBehaviour {
     public int valorDado = 0; //Recebe o valor do dado para movimentação
 
     public bool dadosIguais = false; //Se o jogador tirar dados iguais, jogará novamente
-    private int dadosPrisao = 0; //Se o jogador tirar dados iguais três vezes seguidas, jogador estará preso
+    public int dadosPrisao = 0; //Se o jogador tirar dados iguais três vezes seguidas, jogador estará preso
 
 
     void Start() {
@@ -49,7 +49,9 @@ public class GameControl : MonoBehaviour {
             if ((jogador.posicaoAtual == prisao.posicaoVaParaPrisao) || (dadosPrisao >= 3)) {
                 jogador.preso = true;
                 prisao.jogadorDaVez = jogador;
-                FinalizaVezJogador(jogador);
+                dadosIguais = false;
+                dadosPrisao = 0;
+                FinalizaVezJogadorPreso(jogador);
             }
         } else {
             FinalizaVezJogadorPreso(jogador);
@@ -79,12 +81,9 @@ public class GameControl : MonoBehaviour {
         posicaoAnterior = 0;
         valorDado = 0;
 
-        if (dadosIguais) {
-            dadosPrisao++;
-        } else {
+        if (!dadosIguais) {
             AtualizaVezJogador();
             SetaVezJogador();
-            dadosPrisao = 0;
         }
     }
 
@@ -93,12 +92,12 @@ public class GameControl : MonoBehaviour {
         if (dadosIguais) {
             jogador.preso = false;
             prisao.jogadorDaVez = jogador;
+            dadosIguais = false;
         } else {
             jogador.movimentoPermitido = false;
 
             posicaoAnterior = 0;
             valorDado = 0;
-            dadosPrisao = 0;
 
             AtualizaVezJogador();
             SetaVezJogador();
@@ -120,6 +119,7 @@ public class GameControl : MonoBehaviour {
     //Vai para o próximo jogador poder jogar
     private void AtualizaVezJogador() {
         vezJogador++;
+        dadosPrisao = 0;
         if (vezJogador > jogadores.Length) {
             vezJogador = 1L;
         }
