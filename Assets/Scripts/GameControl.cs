@@ -46,7 +46,7 @@ public class GameControl : MonoBehaviour {
 
     public void VerificaPrisao(Jogador jogador) {
         if (!jogador.preso) {
-            if ((jogador.posicaoAtual == prisao.posicaoVaParaPrisao) || (dadosPrisao >= 3)) {
+            if ((jogador.posicaoAtual == prisao.posicaoVaParaPrisao && !jogador.movimentoPermitido) || (dadosPrisao >= 3)) {
                 jogador.preso = true;
                 prisao.jogadorDaVez = jogador;
                 dadosIguais = false;
