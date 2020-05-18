@@ -1,7 +1,7 @@
 ﻿using System.Globalization;
 using Unity.Collections;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class Jogador : MonoBehaviour {
 
@@ -15,7 +15,7 @@ public class Jogador : MonoBehaviour {
     [HideInInspector] public int ultimaPosicao = 0; //Casa anterior que o jogador estava
 
 
-    [SerializeField] public Text txtVezJogador; //Texto que indica se é a vez do jogador
+    [SerializeField] public TextMeshProUGUI txtVezJogador; //Texto que indica se é a vez do jogador
     public bool vezJogador = false; //Define se o jogar esta na sua vez ou não
 
     public bool preso = false; //Identifica se esta preso ou não

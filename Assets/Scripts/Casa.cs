@@ -5,30 +5,29 @@ using UnityEngine;
 public class Casa : MonoBehaviour
 {
 
-    [SerializeField] private int numero = 0;
-    [SerializeField] private float valor = 0.0f;
+    [SerializeField] private int idCasa = 0;
     [SerializeField] private string nome = "";
-    [SerializeField] private int dono = 0;
+    
+    [SerializeField] private string corTexto = "";
+    [SerializeField] private string corPrimaria = "";
+    [SerializeField] private string corSecundaria = "";
+
     [SerializeField] private bool compravel = true;
     [SerializeField] private bool empresa = false;
     [SerializeField] private bool sorteReves = false;
 
-    private Jogador player1Mov;
-    private Jogador player2Mov;
+    [SerializeField] private float valorInicial = 0.0f;
+    [SerializeField] private float valorVenda = 0.0f;
+    [SerializeField] private float valorConstrucaoCasa = 0.0f;
 
-    private static GameObject player1, player2;
-    
+    [SerializeField] private int dono = 0;
     void Start(){
 
-        player1 = GameObject.Find("Jogador1");
-        player2 = GameObject.Find("Jogador2");
         
     }
 
     void Update(){
 
-        player1Mov = player1.GetComponent<Jogador>();
-        player2Mov = player2.GetComponent<Jogador>();
 
     }
 }

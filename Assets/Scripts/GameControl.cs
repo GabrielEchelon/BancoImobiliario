@@ -1,10 +1,10 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class GameControl : MonoBehaviour {
 
-    [SerializeField] private Text txtJogadorVencedor; //Texto que indica qual jogador ganhou a partida
+    [SerializeField] private TextMeshProUGUI txtInformacao; //Texto que informa situações aos jogadores
 
     [SerializeField] private Prisao prisao; //Define as configuracoes da prisão
 
@@ -27,10 +27,17 @@ public class GameControl : MonoBehaviour {
         prisao.jogadorDaVez = JogadorDaVez();
 
         //Mantem o texto de "Jogador x venceu" até segunda chamada
-        txtJogadorVencedor.gameObject.SetActive(false);
+        txtInformacao.gameObject.SetActive(false);
     }
 
     void Update() {
+
+        if (JogadorDaVez().preso) {
+            txtInformacao.text = "Jogador " + JogadorDaVez().idJogador + " está preso!";
+            txtInformacao.gameObject.SetActive(true);
+        } else {
+            txtInformacao.gameObject.SetActive(false);
+        }
 
         if (valorDado != 0) {
             VerificaPrisao(JogadorDaVez());
@@ -48,9 +55,15 @@ public class GameControl : MonoBehaviour {
         if (!jogador.preso) {
             if ((jogador.posicaoAtual == prisao.posicaoVaParaPrisao && !jogador.movimentoPermitido) || (dadosPrisao >= 3)) {
                 jogador.preso = true;
+                jogador.movimentoPermitido = false;
+
                 prisao.jogadorDaVez = jogador;
                 dadosIguais = false;
                 dadosPrisao = 0;
+
+
+                
+
                 FinalizaVezJogadorPreso(jogador);
             }
         } else {

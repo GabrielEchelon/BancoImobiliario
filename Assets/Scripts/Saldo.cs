@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class Saldo : MonoBehaviour {
 
-    [SerializeField] private Text txtSaldoPlayer; //Componente que irá exibir o saldo do jogador
-    [SerializeField] private Text txtPatrimonioPlayer; //Componente que irá exibir o patrimonio do jogador
+    [SerializeField] private TextMeshProUGUI txtSaldoPlayer; //Componente que irá exibir o saldo do jogador
+    [SerializeField] private TextMeshProUGUI txtPatrimonioPlayer; //Componente que irá exibir o patrimonio do jogador
+    [SerializeField] private TextMeshProUGUI txtPatrimonioIdent; //Texto que identifica o patrimônio
 
     [SerializeField] public float saldoPlayer = 0f; //Saldo do player
     [SerializeField] public float patrimonioPlayer = 0f; //Patrimonio do player
@@ -48,9 +49,11 @@ public class Saldo : MonoBehaviour {
     private void ExibePatrimonios() {
         if (patrimonioPlayer > 0d) {
             txtPatrimonioPlayer.gameObject.SetActive(true);
+            txtPatrimonioIdent.gameObject.SetActive(true);
             txtPatrimonioPlayer.text = "R$ " + saldoPlayer.ToString("#,#");
         } else {
             txtPatrimonioPlayer.gameObject.SetActive(false);
+            txtPatrimonioIdent.gameObject.SetActive(false);
         }
     }
 
