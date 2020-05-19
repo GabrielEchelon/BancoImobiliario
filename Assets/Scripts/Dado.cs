@@ -22,6 +22,11 @@ public class Dado : MonoBehaviour {
         render2.sprite = dadoFace[5];
 	}
 
+    private void Update() {
+        coroutineDisponivel = gameControl.PermiteUtilizarDados();
+
+    }
+
     //Método de quando o mouse clicar no dado
     private void OnMouseDown(){
         // Inicia a rotina "RolarDado"

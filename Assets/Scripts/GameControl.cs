@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class GameControl : MonoBehaviour {
@@ -18,6 +19,8 @@ public class GameControl : MonoBehaviour {
     public bool dadosIguais = false; //Se o jogador tirar dados iguais, jogará novamente
     public int dadosPrisao = 0; //Se o jogador tirar dados iguais três vezes seguidas, jogador estará preso
 
+    [SerializeField] public Button botaoEncerrarVez;
+    [SerializeField] private TextMeshProUGUI txtToolTip;
 
     void Start() {
         //Define o jogador que irá começar o jogo
@@ -41,6 +44,11 @@ public class GameControl : MonoBehaviour {
 
         if (valorDado != 0) {
             VerificaPrisao(JogadorDaVez());
+            botaoEncerrarVez.interactable = true;
+            txtToolTip.gameObject.SetActive(false);
+        } else {
+            botaoEncerrarVez.interactable = false;
+            txtToolTip.gameObject.SetActive(true);
         }
 
         if (valorDado != 0) {
@@ -49,6 +57,10 @@ public class GameControl : MonoBehaviour {
 
         AtualizaDado();
 
+    }
+
+    public bool PermiteUtilizarDados() {
+        return !botaoEncerrarVez.interactable;
     }
 
     public void VerificaPrisao(Jogador jogador) {
