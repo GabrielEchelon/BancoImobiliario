@@ -5,50 +5,32 @@ using TMPro;
 
 public class GameControl : MonoBehaviour {
 
-    [SerializeField] private TextMeshProUGUI txtInformacao; //Texto que informa situações aos jogadores
+    [SerializeField] private Prisao prisao; 
 
-    [SerializeField] private Prisao prisao; //Define as configuracoes da prisão
-
-    [SerializeField] private Jogador[] jogadores; //Array de jogadores, caso queira mais de dois, é só por um novo icone e definir no gameControl (Dentro do unity)
+    [SerializeField] private Jogador[] jogadores; 
     private int posicaoAnterior = 0;
 
-    [SerializeField] public long vezJogador = 1L; //Define a vez de qual jogador, começando sempre pelo primeiro
+    [SerializeField] public long vezJogador = 1L; 
 
-    public int valorDado = 0; //Recebe o valor do dado para movimentação
+    public int valorDado = 0; 
 
-    public bool dadosIguais = false; //Se o jogador tirar dados iguais, jogará novamente
-    public int dadosPrisao = 0; //Se o jogador tirar dados iguais três vezes seguidas, jogador estará preso
+    public bool dadosIguais = false;
+    public bool dadosRodados = false;
+    public int dadosPrisao = 0; 
 
     [SerializeField] public Button botaoEncerrarVez;
     [SerializeField] private TextMeshProUGUI txtToolTip;
 
     void Start() {
-        //Define o jogador que irá começar o jogo
         SetaVezJogador();
 
-        //Verificação necessária para a prisão não ficar com um jogador null
         prisao.jogadorDaVez = JogadorDaVez();
 
-        //Mantem o texto de "Jogador x venceu" até segunda chamada
-        txtInformacao.gameObject.SetActive(false);
     }
 
     void Update() {
-
-        if (JogadorDaVez().preso) {
-            txtInformacao.text = "Jogador " + JogadorDaVez().idJogador + " está preso!";
-            txtInformacao.gameObject.SetActive(true);
-        } else {
-            txtInformacao.gameObject.SetActive(false);
-        }
-
-        if (valorDado != 0) {
-            VerificaPrisao(JogadorDaVez());
-            botaoEncerrarVez.interactable = true;
-            txtToolTip.gameObject.SetActive(false);
-        } else {
-            botaoEncerrarVez.interactable = false;
-            txtToolTip.gameObject.SetActive(true);
+        if (valorDado != 0) { 
+            VerificaPrisao();
         }
 
         if (valorDado != 0) {
@@ -59,11 +41,8 @@ public class GameControl : MonoBehaviour {
 
     }
 
-    public bool PermiteUtilizarDados() {
-        return !botaoEncerrarVez.interactable;
-    }
-
-    public void VerificaPrisao(Jogador jogador) {
+    public void VerificaPrisao() {
+        Jogador jogador = JogadorDaVez();
         if (!jogador.preso) {
             if ((jogador.posicaoAtual == prisao.posicaoVaParaPrisao && !jogador.movimentoPermitido) || (dadosPrisao >= 3)) {
                 jogador.preso = true;
@@ -73,9 +52,6 @@ public class GameControl : MonoBehaviour {
                 dadosIguais = false;
                 dadosPrisao = 0;
 
-
-                
-
                 FinalizaVezJogadorPreso(jogador);
             }
         } else {
@@ -83,7 +59,6 @@ public class GameControl : MonoBehaviour {
         }
     }
 
-    //Inicia a movimentação do jogador, além de saber se ele concluiu o caminho ou não
     private void MovePlayer() {
         Jogador jogador = JogadorDaVez();
         if (!jogador.movimentoPermitido && posicaoAnterior == 0) {
@@ -96,52 +71,55 @@ public class GameControl : MonoBehaviour {
             if (jogador.posicaoAtual != 0) {
                 jogador.posicaoAtual -= 1;
             }
-            FinalizaVezJogador(jogador);
+            ResetaJogador(jogador);
         }
     }
 
-    private void FinalizaVezJogador(Jogador jogador) {
+    private void ResetaJogador(Jogador jogador) {
         jogador.movimentoPermitido = false;
 
         posicaoAnterior = 0;
         valorDado = 0;
+        botaoEncerrarVez.interactable = true;
+    }
 
-        if (!dadosIguais) {
-            AtualizaVezJogador();
-            SetaVezJogador();
-        }
+    public void FinalizaVezJogador() {
+
+        AtualizaVezJogador();
+        SetaVezJogador();
+
+        botaoEncerrarVez.interactable = false;
+        dadosRodados = false;
     }
 
     private void FinalizaVezJogadorPreso(Jogador jogador) {
-
         if (dadosIguais) {
             jogador.preso = false;
             prisao.jogadorDaVez = jogador;
             dadosIguais = false;
         } else {
-            jogador.movimentoPermitido = false;
-
-            posicaoAnterior = 0;
-            valorDado = 0;
-
-            AtualizaVezJogador();
-            SetaVezJogador();
+            ResetaJogador(jogador);
+            FinalizaVezJogador();
         }
     }
 
-    //Pega qual jogador está na vez de jogada
+
+
+
+
+
+
+
     public Jogador JogadorDaVez() {
         return Array.Find(jogadores, j => j.vezJogador);
     }
 
-    //Define a vez de jogada do jogador
     private void SetaVezJogador() {
         foreach (Jogador jogador in jogadores) {
             jogador.vezJogador = (jogador.idJogador.Equals(vezJogador));
         }
     }
 
-    //Vai para o próximo jogador poder jogar
     private void AtualizaVezJogador() {
         vezJogador++;
         dadosPrisao = 0;
@@ -150,7 +128,6 @@ public class GameControl : MonoBehaviour {
         }
     }
 
-    //Atualiza o valor do dado para o jogador poder continuar no tabuleiro depois de dar uma volta
     private void AtualizaDado() {
         Jogador jogador = JogadorDaVez();
         if (jogador.posicaoAtual == 0 && posicaoAnterior > 0) {

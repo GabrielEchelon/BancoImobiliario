@@ -5,20 +5,18 @@ using TMPro;
 
 public class Saldo : MonoBehaviour {
 
-    [SerializeField] private TextMeshProUGUI txtSaldoPlayer; //Componente que irá exibir o saldo do jogador
-    [SerializeField] private TextMeshProUGUI txtPatrimonioPlayer; //Componente que irá exibir o patrimonio do jogador
-    [SerializeField] private TextMeshProUGUI txtPatrimonioIdent; //Texto que identifica o patrimônio
+    [SerializeField] private TextMeshProUGUI txtSaldoPlayer; 
+    [SerializeField] private TextMeshProUGUI txtPatrimonioPlayer; 
+    [SerializeField] private TextMeshProUGUI txtPatrimonioIdent; 
 
-    [SerializeField] public float saldoPlayer = 0f; //Saldo do player
-    [SerializeField] public float patrimonioPlayer = 0f; //Patrimonio do player
-    [SerializeField] public float valorDebitoCredito = 0f; //Valor que irá alterar o saldo do player
-    [HideInInspector] public long idJogador = 0L; //Identificação do jogador
+    [SerializeField] public float saldoPlayer = 0f; 
+    [SerializeField] public float patrimonioPlayer = 0f; 
+    [SerializeField] public float valorDebitoCredito = 0f; 
+    [HideInInspector] public long idJogador = 0L; 
 
-    private bool coroutineSaldo = true; //Define se é para atualizar o saldo
+    private bool coroutineSaldo = true; 
 
     void Start(){
-
-        //Previne que o saldo e patrimonio comecem negativos
         if(saldoPlayer <= 0f) {
             saldoPlayer = 1500000f;
         }
@@ -28,7 +26,6 @@ public class Saldo : MonoBehaviour {
     }
 
     void Update(){
-        //Atualiza os saldos conforme o id do Jogador
         if (idJogador != 0L) {
             ExibeSaldos();
             ExibePatrimonios();
@@ -40,12 +37,10 @@ public class Saldo : MonoBehaviour {
         }
     }
 
-    //Exibe o valor dos saldos na tela
     private void ExibeSaldos() {
         txtSaldoPlayer.text = "R$ " + saldoPlayer.ToString("#,#");
     }
 
-    //Exibe o valor dos patrimônios na tela
     private void ExibePatrimonios() {
         if (patrimonioPlayer > 0d) {
             txtPatrimonioPlayer.gameObject.SetActive(true);
@@ -57,7 +52,6 @@ public class Saldo : MonoBehaviour {
         }
     }
 
-    //Coroutine que atualiza o valor do saldo e realiza animação dos números
     public IEnumerator AtualizaSaldos(float valorAlteracao) {
 
         coroutineSaldo = false; 

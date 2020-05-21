@@ -286,8 +286,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 13820149}
+  - component: {fileID: 13820150}
   m_Layer: 0
-  m_Name: Waypoint (15)
+  m_Name: Lote (15)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -307,6 +308,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &13820150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13820148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 15
+  nome: "Rua da Consola\xE7\xE3o"
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 180000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &56987564
 GameObject:
   m_ObjectHideFlags: 0
@@ -536,6 +565,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 60632908}
   m_CullTransparentMesh: 0
+--- !u!1 &64851090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 64851091}
+  - component: {fileID: 64851092}
+  m_Layer: 0
+  m_Name: Carta (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &64851091
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64851090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 82989910}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &64851092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64851090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a643854194f6b184ea250da99f965189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCarta: 5
+  descricao: Sua mulher foi miss universo.
+  valor: 200000
 --- !u!1 &65051685
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,8 +701,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 73171995}
+  - component: {fileID: 73171996}
   m_Layer: 0
-  m_Name: Waypoint (8)
+  m_Name: Lote (8)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -646,6 +722,229 @@ Transform:
   m_Children: []
   m_Father: {fileID: 675316066}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &73171996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73171994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 8
+  nome: Rua Oscar Freire
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 220000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
+--- !u!1 &79728713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 79728714}
+  - component: {fileID: 79728716}
+  - component: {fileID: 79728715}
+  m_Layer: 5
+  m_Name: txtPagamento
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &79728714
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79728713}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.11491385}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_Children:
+  - {fileID: 322412196}
+  m_Father: {fileID: 2099100386}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -443, y: -148}
+  m_SizeDelta: {x: 650.8, y: 362.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &79728715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79728713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Descri\xE7\xE3o pagamento"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 0b62ca51fa8f55b429f146a989b8aaa3, type: 2}
+  m_sharedMaterial: {fileID: -8174247538947062278, guid: 0b62ca51fa8f55b429f146a989b8aaa3,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 79728715}
+    characterCount: 17
+    spriteCount: 0
+    spaceCount: 2
+    wordCount: 3
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 2
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 322412197}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &79728716
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79728713}
+  m_CullTransparentMesh: 0
+--- !u!1 &82989909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 82989910}
+  m_Layer: 0
+  m_Name: Cartas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &82989910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82989909}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.53694504, y: -0.017609024, z: -0.40722656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 100424488}
+  - {fileID: 357280375}
+  - {fileID: 1342117259}
+  - {fileID: 2076873818}
+  - {fileID: 1630190942}
+  - {fileID: 64851091}
+  - {fileID: 1621706767}
+  - {fileID: 1714339212}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &83428797
 GameObject:
@@ -868,7 +1167,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &92834969
 GameObject:
@@ -879,8 +1178,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 92834970}
+  - component: {fileID: 92834971}
   m_Layer: 0
-  m_Name: Waypoint (22)
+  m_Name: Debito (22)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -900,6 +1200,80 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &92834971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92834969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 22
+  nome: Receita Federal
+  descricao: Pague o imposto de renda, R$ 200.000.
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 0
+  empresa: 0
+  sorteReves: 0
+  descritivo: 1
+  valorCompra: -200000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
+--- !u!1 &100424487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 100424488}
+  - component: {fileID: 100424489}
+  m_Layer: 0
+  m_Name: Carta (0)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &100424488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100424487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 82989910}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &100424489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100424487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a643854194f6b184ea250da99f965189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCarta: 0
+  descricao: Seu filho bateu o carro, compre um novo a ele.
+  valor: -100000
 --- !u!1 &125114045
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,8 +1364,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 149383941}
+  - component: {fileID: 149383942}
   m_Layer: 0
-  m_Name: Waypoint (9)
+  m_Name: Lote (9)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1011,6 +1386,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &149383942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149383940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 9
+  nome: Av Ibirapuera
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 220000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &150505661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,8 +1580,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 160181657}
+  - component: {fileID: 160181658}
   m_Layer: 0
-  m_Name: Waypoint (38)
+  m_Name: Credito (38)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1198,6 +1602,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &160181658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160181656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 38
+  nome: "Restitui\xE7\xE3o do Imposto de Renda"
+  descricao: "Receba a sua restitui\xE7\xE3o do IR"
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 0
+  empresa: 0
+  sorteReves: 0
+  descritivo: 1
+  valorCompra: 200000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &163422331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1363,8 +1795,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 170982762}
+  - component: {fileID: 170982763}
   m_Layer: 0
-  m_Name: Waypoint (27)
+  m_Name: Lote (27)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1384,6 +1817,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &170982763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 170982761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 27
+  nome: Av Paulista
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 160000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &197906613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,8 +1854,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 197906614}
+  - component: {fileID: 197906615}
   m_Layer: 0
-  m_Name: Waypoint (7)
+  m_Name: Empresa (7)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1414,6 +1876,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &197906615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197906613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 7
+  nome: Ponto Com
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 1
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 150000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &241580481
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,8 +1913,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 241580482}
+  - component: {fileID: 241580483}
   m_Layer: 0
-  m_Name: Waypoint (19)
+  m_Name: Credito (19)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1444,6 +1935,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &241580483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241580481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 19
+  nome: "Cr\xE9ditos de Carbono"
+  descricao: "Receba R$150.000 em cr\xE9ditos"
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 0
+  empresa: 0
+  sorteReves: 0
+  descritivo: 1
+  valorCompra: 0
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &255731416
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,6 +2035,163 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255731416}
   m_CullTransparentMesh: 0
+--- !u!1 &257615665
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 257615666}
+  - component: {fileID: 257615667}
+  - component: {fileID: 257615668}
+  m_Layer: 5
+  m_Name: txtLoteDescricao
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &257615666
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257615665}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.11491385}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_Children:
+  - {fileID: 893664344}
+  m_Father: {fileID: 2099100386}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -443, y: 195}
+  m_SizeDelta: {x: 650.8, y: 362.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &257615667
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257615665}
+  m_CullTransparentMesh: 0
+--- !u!114 &257615668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257615665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "Descri\xE7\xE3o do Lote"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 0b62ca51fa8f55b429f146a989b8aaa3, type: 2}
+  m_sharedMaterial: {fileID: -8174247538947062278, guid: 0b62ca51fa8f55b429f146a989b8aaa3,
+    type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_outlineColor:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_textAlignment: 514
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  m_isLinkedTextComponent: 0
+  m_isTextTruncated: 0
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_ignoreRectMaskCulling: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_firstVisibleCharacter: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_textInfo:
+    textComponent: {fileID: 257615668}
+    characterCount: 17
+    spriteCount: 0
+    spaceCount: 2
+    wordCount: 3
+    linkCount: 0
+    lineCount: 1
+    pageCount: 1
+    materialCount: 2
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 893664345}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &278389087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1744,6 +2420,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 290901087}
   m_CullTransparentMesh: 0
+--- !u!1 &322412195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 322412196}
+  - component: {fileID: 322412198}
+  - component: {fileID: 322412197}
+  m_Layer: 5
+  m_Name: TMP SubMeshUI [trebuc SDF Material + LiberationSans SDF Atlas]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &322412196
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322412195}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79728714}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &322412197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322412195}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_spriteAsset: {fileID: 0}
+  m_material: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
+  m_isDefaultMaterial: 0
+  m_padding: 1.25
+  m_canvasRenderer: {fileID: 322412198}
+  m_TextComponent: {fileID: 79728715}
+  m_materialReferenceIndex: 1
+--- !u!222 &322412198
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 322412195}
+  m_CullTransparentMesh: 0
 --- !u!1 &327957822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,8 +2501,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 327957823}
+  - component: {fileID: 327957824}
   m_Layer: 0
-  m_Name: Waypoint (14)
+  m_Name: Empresa (14)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1774,6 +2523,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &327957824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327957822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 14
+  nome: "Companhia de Minera\xE7\xE3o"
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 1
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 200000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &355938320
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,7 +2690,7 @@ MonoBehaviour:
   - {fileID: 2140225171}
   velocidadeMovimento: 5
   movimentoPermitido: 0
-  posicaoAtual: 0
+  posicaoAtual: 5
   ultimaPosicao: 0
   txtVezJogador: {fileID: 453193747}
   vezJogador: 0
@@ -1937,6 +2714,52 @@ MonoBehaviour:
   patrimonioPlayer: 0
   valorDebitoCredito: 0
   idJogador: 1
+--- !u!1 &357280374
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 357280375}
+  - component: {fileID: 357280376}
+  m_Layer: 0
+  m_Name: Carta (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &357280375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357280374}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 82989910}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &357280376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 357280374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a643854194f6b184ea250da99f965189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCarta: 1
+  descricao: "Voc\xEA foi promovido no trabalho."
+  valor: 300000
 --- !u!1 &381217156
 GameObject:
   m_ObjectHideFlags: 0
@@ -2331,8 +3154,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 402922199}
+  - component: {fileID: 402922200}
   m_Layer: 0
-  m_Name: Waypoint (4)
+  m_Name: Lote (4)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2352,6 +3176,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &402922200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 402922198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 4
+  nome: Av Beira Mar
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 100000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &411882074
 GameObject:
   m_ObjectHideFlags: 0
@@ -2386,7 +3238,7 @@ RectTransform:
   - {fileID: 1740871989}
   - {fileID: 1046009706}
   m_Father: {fileID: 2099100386}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2404,7 +3256,7 @@ GameObject:
   - component: {fileID: 422466189}
   - component: {fileID: 422466190}
   m_Layer: 0
-  m_Name: Waypoint (1)
+  m_Name: Lote (1)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2436,17 +3288,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  idCasa: 0
+  idCasa: 1
   nome: "Jardim Bot\xE2nico"
+  descricao: 
   corTexto: 
   corPrimaria: 
   corSecundaria: 
   compravel: 1
   empresa: 0
   sorteReves: 0
-  valorInicial: 0
+  descritivo: 0
+  valorCompra: 150000
   valorVenda: 0
+  valorAluguel: 0
   valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
   dono: 0
 --- !u!1 &453193745
 GameObject:
@@ -2613,8 +3469,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 456600285}
+  - component: {fileID: 456600286}
   m_Layer: 0
-  m_Name: Waypoint (30)
+  m_Name: VaParaPrisao (30)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2634,6 +3491,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &456600286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456600284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 30
+  nome: "V\xE1 para a pris\xE3o!"
+  descricao: "Voc\xEA est\xE1 preso, rode dados iguais para sair da pris\xE3o."
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 0
+  empresa: 0
+  sorteReves: 0
+  descritivo: 1
+  valorCompra: 0
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &466352663
 GameObject:
   m_ObjectHideFlags: 0
@@ -2643,8 +3528,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 466352664}
+  - component: {fileID: 466352665}
   m_Layer: 0
-  m_Name: Waypoint (28)
+  m_Name: SorteReves (28)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2664,6 +3550,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &466352665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466352663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 28
+  nome: "SorteRev\xE9s"
+  descricao: Clique nas cartas do tabuleiro para ler uma.
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 0
+  empresa: 0
+  sorteReves: 1
+  descritivo: 1
+  valorCompra: 0
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &475137949
 GameObject:
   m_ObjectHideFlags: 0
@@ -2913,8 +3827,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 551765887}
+  - component: {fileID: 551765888}
   m_Layer: 0
-  m_Name: Waypoint (2)
+  m_Name: Empresa (2)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2934,6 +3849,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &551765888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 551765886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 2
+  nome: "Companhia de For\xE7a e Luz"
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 1
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 200000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &558119381
 GameObject:
   m_ObjectHideFlags: 0
@@ -2945,7 +3888,7 @@ GameObject:
   - component: {fileID: 558119382}
   - component: {fileID: 558119383}
   m_Layer: 0
-  m_Name: Waypoint (0)
+  m_Name: Inicio (0)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -2979,15 +3922,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   idCasa: 0
   nome: "In\xEDcio"
+  descricao: "Ap\xF3s a primeira volta, receba seu pr\xF3-labore de R$200.000"
   corTexto: 
   corPrimaria: 
   corSecundaria: 
   compravel: 0
   empresa: 0
   sorteReves: 0
-  valorInicial: 0
+  descritivo: 1
+  valorCompra: 200000
   valorVenda: 0
+  valorAluguel: 0
   valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
   dono: 0
 --- !u!1 &576203300
 GameObject:
@@ -3318,8 +4265,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 627879541}
+  - component: {fileID: 627879542}
   m_Layer: 0
-  m_Name: Waypoint (10)
+  m_Name: Prisao (10)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3339,6 +4287,35 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &627879542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627879540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 10
+  nome: "Pris\xE3o/Visitas"
+  descricao: Visitas seguem em frente. Jogadores presos devem rodar dados iguais
+    para sair.
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 0
+  empresa: 0
+  sorteReves: 0
+  descritivo: 1
+  valorCompra: 0
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &627970381
 GameObject:
   m_ObjectHideFlags: 0
@@ -3421,8 +4398,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 634459262}
+  - component: {fileID: 634459263}
   m_Layer: 0
-  m_Name: Waypoint (37)
+  m_Name: Lote (37)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3442,6 +4420,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &634459263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 634459261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 37
+  nome: "Marina da Gl\xF3ria"
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 260000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &642650395
 GameObject:
   m_ObjectHideFlags: 0
@@ -3577,7 +4583,7 @@ Transform:
   - {fileID: 160181657}
   - {fileID: 2140225171}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &678643513
 GameObject:
@@ -3588,8 +4594,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 678643514}
+  - component: {fileID: 678643515}
   m_Layer: 0
-  m_Name: Waypoint (26)
+  m_Name: Lote (26)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3609,6 +4616,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &678643515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 678643513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 26
+  nome: "Ponte do Gua\xEDba"
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 140000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &689317987
 GameObject:
   m_ObjectHideFlags: 0
@@ -3673,78 +4708,6 @@ Transform:
   m_Father: {fileID: 1484648838}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &712435883
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 712435884}
-  - component: {fileID: 712435886}
-  - component: {fileID: 712435885}
-  m_Layer: 5
-  m_Name: TMP SubMeshUI [trebuc SDF Material + LiberationSans SDF Atlas]
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &712435884
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712435883}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1968790576}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &712435885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712435883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 1.25
-  m_canvasRenderer: {fileID: 712435886}
-  m_TextComponent: {fileID: 1968790578}
-  m_materialReferenceIndex: 1
---- !u!222 &712435886
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 712435883}
-  m_CullTransparentMesh: 0
 --- !u!1 &722844603
 GameObject:
   m_ObjectHideFlags: 0
@@ -3754,8 +4717,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 722844604}
+  - component: {fileID: 722844605}
   m_Layer: 0
-  m_Name: Waypoint (36)
+  m_Name: Lote (36)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -3775,6 +4739,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &722844605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722844603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 36
+  nome: "Ponto Rio-Niter\xF3i"
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 280000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &748102230
 GameObject:
   m_ObjectHideFlags: 0
@@ -3945,7 +4937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &758187794
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4080,7 +5072,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.257}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &774637554
 GameObject:
@@ -4116,7 +5108,7 @@ Transform:
   - {fileID: 1979900645}
   - {fileID: 475137950}
   m_Father: {fileID: 2099100386}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &783546123
 GameObject:
@@ -4180,7 +5172,7 @@ Transform:
   - {fileID: 355938322}
   - {fileID: 576203302}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &809634707
 GameObject:
@@ -4191,8 +5183,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 809634708}
+  - component: {fileID: 809634709}
   m_Layer: 0
-  m_Name: Waypoint (21)
+  m_Name: SorteReves (21)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4212,6 +5205,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &809634709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809634707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 21
+  nome: "SorteRev\xE9s"
+  descricao: Clique nas cartas do tabuleiro para ler uma.
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 0
+  empresa: 0
+  sorteReves: 1
+  descritivo: 1
+  valorCompra: 0
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &817863912
 GameObject:
   m_ObjectHideFlags: 0
@@ -4225,7 +5246,7 @@ GameObject:
   - component: {fileID: 817863915}
   - component: {fileID: 817863914}
   m_Layer: 5
-  m_Name: "Bot\xE3oPrincipalLote"
+  m_Name: ButtonPrincipalLote
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4244,7 +5265,7 @@ RectTransform:
   m_Children:
   - {fileID: 290901088}
   m_Father: {fileID: 2099100386}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4515,7 +5536,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89eb6cfc89eb01748bcddda1a7a2b5e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  txtInformacao: {fileID: 1968790578}
   prisao: {fileID: 1554189494}
   jogadores:
   - {fileID: 355938323}
@@ -4523,6 +5543,7 @@ MonoBehaviour:
   vezJogador: 1
   valorDado: 0
   dadosIguais: 0
+  dadosRodados: 0
   dadosPrisao: 0
   botaoEncerrarVez: {fileID: 1000724770}
   txtToolTip: {fileID: 1678796307}
@@ -4538,8 +5559,80 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &893664343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 893664344}
+  - component: {fileID: 893664346}
+  - component: {fileID: 893664345}
+  m_Layer: 5
+  m_Name: TMP SubMeshUI [trebuc SDF Material + LiberationSans SDF Atlas]
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &893664344
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893664343}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 257615666}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &893664345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893664343}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_spriteAsset: {fileID: 0}
+  m_material: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
+  m_isDefaultMaterial: 0
+  m_padding: 1.25
+  m_canvasRenderer: {fileID: 893664346}
+  m_TextComponent: {fileID: 257615668}
+  m_materialReferenceIndex: 1
+--- !u!222 &893664346
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893664343}
+  m_CullTransparentMesh: 0
 --- !u!1 &905971501
 GameObject:
   m_ObjectHideFlags: 0
@@ -4779,8 +5872,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 925646363}
+  - component: {fileID: 925646364}
   m_Layer: 0
-  m_Name: Waypoint (29)
+  m_Name: Lote (29)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4800,6 +5894,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &925646364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925646362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 29
+  nome: Av Recife
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 140000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &938495953
 GameObject:
   m_ObjectHideFlags: 0
@@ -4809,8 +5931,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 938495954}
+  - component: {fileID: 938495955}
   m_Layer: 0
-  m_Name: Waypoint (23)
+  m_Name: Lote (23)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -4830,6 +5953,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &938495955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938495953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 23
+  nome: "S\xE3o Jo\xE3o"
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 120000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &940108040
 GameObject:
   m_ObjectHideFlags: 0
@@ -4996,8 +6147,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 975578698}
+  - component: {fileID: 975578699}
   m_Layer: 0
-  m_Name: Waypoint (24)
+  m_Name: Lote (24)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5017,6 +6169,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &975578699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975578697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 24
+  nome: Av Ipiranga
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 100000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &980986796
 GameObject:
   m_ObjectHideFlags: 0
@@ -5026,8 +6206,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 980986797}
+  - component: {fileID: 980986798}
   m_Layer: 0
-  m_Name: Waypoint (33)
+  m_Name: SorteReves (33)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5047,6 +6228,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &980986798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980986796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 33
+  nome: "SorteRev\xE9s"
+  descricao: Clique nas cartas do tabuleiro para ler uma.
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 0
+  empresa: 0
+  sorteReves: 1
+  descritivo: 1
+  valorCompra: 0
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &995981244
 GameObject:
   m_ObjectHideFlags: 0
@@ -5056,8 +6265,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 995981245}
+  - component: {fileID: 995981246}
   m_Layer: 0
-  m_Name: Waypoint (20)
+  m_Name: Feriado (20)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5077,6 +6287,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &995981246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995981244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 20
+  nome: Feriado!
+  descricao: "Hoje \xE9 feriado, passe a vez."
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 0
+  empresa: 0
+  sorteReves: 0
+  descritivo: 1
+  valorCompra: 0
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &1000724768
 GameObject:
   m_ObjectHideFlags: 0
@@ -5159,8 +6397,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 874268001}
-        m_MethodName: 
+      - m_Target: {fileID: 874268002}
+        m_MethodName: FinalizaVezJogador
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5453,8 +6691,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1069907709}
+  - component: {fileID: 1069907710}
   m_Layer: 0
-  m_Name: Waypoint (16)
+  m_Name: SorteReves (16)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5474,6 +6713,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1069907710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069907708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 16
+  nome: "SorteRev\xE9s"
+  descricao: Clique nas cartas do tabuleiro para ler uma.
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 0
+  empresa: 0
+  sorteReves: 1
+  descritivo: 0
+  valorCompra: 0
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &1070011102
 GameObject:
   m_ObjectHideFlags: 0
@@ -5578,6 +6845,137 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079611992}
   m_CullTransparentMesh: 0
+--- !u!1 &1082323332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1082323334}
+  - component: {fileID: 1082323333}
+  - component: {fileID: 1082323336}
+  - component: {fileID: 1082323335}
+  m_Layer: 0
+  m_Name: SorteReves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1082323333
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082323332}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: ea5bcfc23f734484e91b8ccc8bbbb01d, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.4, y: 6.52}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1082323334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082323332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.44, y: -2.01, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1082323335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082323332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d67ff1ab140a52a40a5590782158b5b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cartas:
+  - {fileID: 100424489}
+  - {fileID: 357280376}
+  - {fileID: 1342117260}
+  - {fileID: 2076873819}
+  - {fileID: 1630190943}
+  - {fileID: 64851092}
+  - {fileID: 1621706768}
+  - {fileID: 1714339213}
+  loteControl: {fileID: 1668051651}
+--- !u!61 &1082323336
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082323332}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.4, y: 6.52}
+    newSize: {x: 5.4, y: 6.52}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.4, y: 6.52}
+  m_EdgeRadius: 0
 --- !u!1 &1085903307
 GameObject:
   m_ObjectHideFlags: 0
@@ -5587,8 +6985,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1085903308}
+  - component: {fileID: 1085903309}
   m_Layer: 0
-  m_Name: Waypoint (12)
+  m_Name: Lote (12)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5608,6 +7007,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1085903309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085903307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 12
+  nome: "Pra\xE7a da S\xE9"
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 200000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &1090636859
 GameObject:
   m_ObjectHideFlags: 0
@@ -5621,7 +7048,7 @@ GameObject:
   - component: {fileID: 1090636862}
   - component: {fileID: 1090636861}
   m_Layer: 5
-  m_Name: "Bot\xE3oConstruir"
+  m_Name: ButtonConstruir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5640,7 +7067,7 @@ RectTransform:
   m_Children:
   - {fileID: 2147538}
   m_Father: {fileID: 2099100386}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5735,8 +7162,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1130679084}
+  - component: {fileID: 1130679085}
   m_Layer: 0
-  m_Name: Waypoint (35)
+  m_Name: Empresa (35)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -5756,6 +7184,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1130679085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130679083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 35
+  nome: Companhia de Saneamento
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 1
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 200000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &1202100175
 GameObject:
   m_ObjectHideFlags: 0
@@ -6043,8 +7499,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1240899409}
+  - component: {fileID: 1240899410}
   m_Layer: 0
-  m_Name: Waypoint (32)
+  m_Name: Lote (32)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -6064,6 +7521,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1240899410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240899408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 32
+  nome: "Pra\xE7a Castro Alves"
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 300000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &1252967404
 GameObject:
   m_ObjectHideFlags: 0
@@ -6229,8 +7714,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1268043959}
+  - component: {fileID: 1268043960}
   m_Layer: 0
-  m_Name: Waypoint (6)
+  m_Name: Lote (6)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -6250,6 +7736,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1268043960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268043958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 6
+  nome: Av Juscelino Kubitschek
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 220000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &1296529433
 GameObject:
   m_ObjectHideFlags: 0
@@ -6344,7 +7858,7 @@ RectTransform:
   - {fileID: 917670471}
   - {fileID: 627970382}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6360,8 +7874,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1302282012}
+  - component: {fileID: 1302282013}
   m_Layer: 0
-  m_Name: Waypoint (3)
+  m_Name: Lote (3)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -6381,6 +7896,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1302282013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302282011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 3
+  nome: Av Niemeyer
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 100000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &1338736848
 GameObject:
   m_ObjectHideFlags: 0
@@ -6390,8 +7933,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1338736849}
+  - component: {fileID: 1338736850}
   m_Layer: 0
-  m_Name: Waypoint (18)
+  m_Name: Lote (18)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -6411,6 +7955,80 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1338736850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338736848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 18
+  nome: Jardins
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 350000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
+--- !u!1 &1342117258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1342117259}
+  - component: {fileID: 1342117260}
+  m_Layer: 0
+  m_Name: Carta (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1342117259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342117258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 82989910}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1342117260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342117258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a643854194f6b184ea250da99f965189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCarta: 2
+  descricao: "Voc\xEA recebeu uma heran\xE7a de um tio distante."
+  valor: 500000
 --- !u!1 &1369225043
 GameObject:
   m_ObjectHideFlags: 0
@@ -6510,7 +8128,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1968790576}
   - {fileID: 1678796306}
   m_Father: {fileID: 652495220}
   m_RootOrder: 4
@@ -6596,8 +8213,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1419720507}
+  - component: {fileID: 1419720508}
   m_Layer: 0
-  m_Name: Waypoint (13)
+  m_Name: Lote (13)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -6617,6 +8235,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1419720508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419720506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 13
+  nome: "Viaduto do Ch\xE1"
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 180000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &1465993653
 GameObject:
   m_ObjectHideFlags: 0
@@ -6782,8 +8428,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1467681897}
+  - component: {fileID: 1467681898}
   m_Layer: 0
-  m_Name: Waypoint (11)
+  m_Name: SorteReves(11)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -6803,6 +8450,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1467681898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467681896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 11
+  nome: "SorteRev\xE9s"
+  descricao: Clique nas cartas do tabuleiro para ler uma.
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 0
+  empresa: 0
+  sorteReves: 1
+  descritivo: 1
+  valorCompra: 0
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &1484648837
 GameObject:
   m_ObjectHideFlags: 0
@@ -7224,8 +8899,54 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1621706766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1621706767}
+  - component: {fileID: 1621706768}
+  m_Layer: 0
+  m_Name: Carta (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1621706767
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621706766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 82989910}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1621706768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621706766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a643854194f6b184ea250da99f965189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCarta: 6
+  descricao: "Voc\xEA caiu num scam de email"
+  valor: -100000
 --- !u!1 &1626740607
 GameObject:
   m_ObjectHideFlags: 0
@@ -7348,6 +9069,53 @@ Transform:
   m_Father: {fileID: 1789262374}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!1 &1630190941
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1630190942}
+  - component: {fileID: 1630190943}
+  m_Layer: 0
+  m_Name: Carta (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1630190942
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630190941}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 82989910}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1630190943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630190941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a643854194f6b184ea250da99f965189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCarta: 4
+  descricao: "Seu CEO foi preso por corrup\xE7\xE3o, pague a fian\xE7a para n\xE3o
+    ser delatado."
+  valor: -1000000
 --- !u!1 &1633944862
 GameObject:
   m_ObjectHideFlags: 0
@@ -7376,8 +9144,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1760846593}
+  - {fileID: 1668051650}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1647212410
 GameObject:
@@ -7608,6 +9377,71 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648525477}
   m_CullTransparentMesh: 0
+--- !u!1 &1668051649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1668051650}
+  - component: {fileID: 1668051651}
+  m_Layer: 0
+  m_Name: LoteControl
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1668051650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668051649}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1633944863}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1668051651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668051649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f6b58d7f3c47644b7e90e0059d29bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameControl: {fileID: 874268002}
+  carta: {fileID: 0}
+  txtLoteTitulo: {fileID: 1974989808}
+  txtProprietario: {fileID: 150505663}
+  txtValorCompra: {fileID: 60632910}
+  txtValorVenda: {fileID: 1647212412}
+  txtValorContratucaoCasa: {fileID: 1509937860}
+  txtValorContratucaoHotel: {fileID: 1740871990}
+  txtValorAluguel: {fileID: 1046009707}
+  txtLoteDescricao: {fileID: 257615668}
+  txtPagamento: {fileID: 79728715}
+  valorProprietario: {fileID: 83428799}
+  valorCompra: {fileID: 940108042}
+  valorVenda: {fileID: 595561601}
+  valorConstrucaoCasa: {fileID: 397788201}
+  valorConstrucaoHotel: {fileID: 1979900646}
+  valorAluguel: {fileID: 475137951}
+  botaoConstruir: {fileID: 1090636861}
+  botaoComprarVender: {fileID: 817863914}
+  txtComprarVender: {fileID: 290901089}
+  sorteReves: 0
+  cartasSorteadas: 0
 --- !u!1 &1678796305
 GameObject:
   m_ObjectHideFlags: 0
@@ -7638,7 +9472,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1369607654}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7663,7 +9497,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rode o dado antes de encerrar a sua vez.
+  m_text: '[TOOLTIP]'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0b62ca51fa8f55b429f146a989b8aaa3, type: 2}
   m_sharedMaterial: {fileID: -8174247538947062278, guid: 0b62ca51fa8f55b429f146a989b8aaa3,
@@ -7733,12 +9567,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1678796307}
-    characterCount: 40
+    characterCount: 9
     spriteCount: 0
-    spaceCount: 8
-    wordCount: 9
+    spaceCount: 0
+    wordCount: 1
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -7836,6 +9670,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1686344050}
   m_CullTransparentMesh: 0
+--- !u!1 &1714339211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1714339212}
+  - component: {fileID: 1714339213}
+  m_Layer: 0
+  m_Name: Carta (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1714339212
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714339211}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 82989910}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1714339213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714339211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a643854194f6b184ea250da99f965189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCarta: 7
+  descricao: "Voc\xEA ganhou na loteria"
+  valor: 1000000
 --- !u!1 &1740871988
 GameObject:
   m_ObjectHideFlags: 0
@@ -8142,7 +10022,7 @@ Transform:
   - {fileID: 1209664545}
   - {fileID: 1626740611}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1802292048
 GameObject:
@@ -8153,8 +10033,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1802292049}
+  - component: {fileID: 1802292050}
   m_Layer: 0
-  m_Name: Waypoint (34)
+  m_Name: Lote (34)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -8174,6 +10055,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1802292050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802292048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 34
+  nome: Av do Contorno
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 300000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &1833637921
 GameObject:
   m_ObjectHideFlags: 0
@@ -8359,8 +10268,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1878332458}
+  - component: {fileID: 1878332459}
   m_Layer: 0
-  m_Name: Waypoint (17)
+  m_Name: Lote (17)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -8380,6 +10290,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1878332459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1878332457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 17
+  nome: "Jardim Bot\xE2nico"
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 400000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &1935328495
 GameObject:
   m_ObjectHideFlags: 0
@@ -8536,163 +10474,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1935328495}
   m_CullTransparentMesh: 0
---- !u!1 &1968790575
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1968790576}
-  - component: {fileID: 1968790577}
-  - component: {fileID: 1968790578}
-  m_Layer: 5
-  m_Name: TxtInformacao
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1968790576
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968790575}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.11491108}
-  m_LocalScale: {x: 1.4400004, y: 1.4400004, z: 1.4400004}
-  m_Children:
-  - {fileID: 712435884}
-  m_Father: {fileID: 1369607654}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 576.1717, y: 265.50497}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1968790577
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968790575}
-  m_CullTransparentMesh: 0
---- !u!114 &1968790578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1968790575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "[INFORMA\xC7\xC3O]"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b62ca51fa8f55b429f146a989b8aaa3, type: 2}
-  m_sharedMaterial: {fileID: -8174247538947062278, guid: 0b62ca51fa8f55b429f146a989b8aaa3,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294907392
-  m_fontColor: {r: 0, g: 0.084820986, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 86
-  m_fontSizeBase: 86
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 514
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 0
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 1968790578}
-    characterCount: 12
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 2
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 712435885}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1974989806
 GameObject:
   m_ObjectHideFlags: 0
@@ -9016,8 +10797,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2019374842}
+  - component: {fileID: 2019374843}
   m_Layer: 0
-  m_Name: Waypoint (31)
+  m_Name: Lote (31)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -9037,6 +10819,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2019374843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019374841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 31
+  nome: "Pra\xE7a dos Tr\xEAs Poderes"
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 320000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &2023243147
 GameObject:
   m_ObjectHideFlags: 0
@@ -9046,8 +10856,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2023243148}
+  - component: {fileID: 2023243149}
   m_Layer: 0
-  m_Name: Waypoint (5)
+  m_Name: SorteReves (5)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -9067,6 +10878,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2023243149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023243147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 5
+  nome: "SorteRev\xE9s"
+  descricao: Clique nas cartas do tabuleiro para ler uma.
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 0
+  empresa: 0
+  sorteReves: 1
+  descritivo: 1
+  valorCompra: 0
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &2050964830
 GameObject:
   m_ObjectHideFlags: 0
@@ -9211,6 +11050,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059357756}
   m_CullTransparentMesh: 0
+--- !u!1 &2076873817
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076873818}
+  - component: {fileID: 2076873819}
+  m_Layer: 0
+  m_Name: Carta (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2076873818
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076873817}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 82989910}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2076873819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076873817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a643854194f6b184ea250da99f965189, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCarta: 3
+  descricao: "Voc\xEA pagou o plano de sa\xFAde antecipado."
+  valor: -200000
 --- !u!1 &2099100385
 GameObject:
   m_ObjectHideFlags: 0
@@ -9240,6 +11125,8 @@ Transform:
   m_Children:
   - {fileID: 758187794}
   - {fileID: 1974989807}
+  - {fileID: 257615666}
+  - {fileID: 79728714}
   - {fileID: 411882075}
   - {fileID: 774637555}
   - {fileID: 817863913}
@@ -9413,8 +11300,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2130272452}
+  - component: {fileID: 2130272453}
   m_Layer: 0
-  m_Name: Waypoint (25)
+  m_Name: Empresa (25)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -9434,6 +11322,34 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2130272453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130272451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 25
+  nome: Companhia Petrolifera
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 1
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 200000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
 --- !u!1 &2140225170
 GameObject:
   m_ObjectHideFlags: 0
@@ -9443,8 +11359,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2140225171}
+  - component: {fileID: 2140225172}
   m_Layer: 0
-  m_Name: Waypoint (39)
+  m_Name: Lote (39)
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -9464,3 +11381,31 @@ Transform:
   m_Father: {fileID: 675316066}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2140225172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140225170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33c0eb27090412438015d04ebf858c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idCasa: 39
+  nome: Barra da Tijuca
+  descricao: 
+  corTexto: 
+  corPrimaria: 
+  corSecundaria: 
+  compravel: 1
+  empresa: 0
+  sorteReves: 0
+  descritivo: 0
+  valorCompra: 260000
+  valorVenda: 0
+  valorAluguel: 0
+  valorConstrucaoCasa: 0
+  valorConstrucaoHotel: 0
+  dono: 0
