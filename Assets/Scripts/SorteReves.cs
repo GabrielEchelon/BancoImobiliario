@@ -8,7 +8,7 @@ public class SorteReves : MonoBehaviour {
     private bool coroutineDisponivel = true;
 
     private void OnMouseDown() {
-        if (coroutineDisponivel && loteControl.sorteReves) {
+        if (coroutineDisponivel && loteControl.sorteReves && !loteControl.jogador.cartaSelecionada) {
             PegarCarta();
         }
     }
@@ -16,9 +16,15 @@ public class SorteReves : MonoBehaviour {
     private void PegarCarta() {
         coroutineDisponivel = false;
 
-        loteControl.carta = cartas[Random.Range(0, cartas.Length)];
+        Carta carta = cartas[Random.Range(0, cartas.Length)];
 
-        loteControl.cartasSorteadas = true;
+        loteControl.carta = carta;
+
+        Saldo saldo = loteControl.jogador.GetComponent<Saldo>();
+        saldo.valorDebitoCredito = carta.valor;
+
+        loteControl.jogador.cartaSelecionada = true;
+        loteControl.sorteReves = false;
         coroutineDisponivel = true;
 
     }

@@ -103,13 +103,6 @@ public class GameControl : MonoBehaviour {
         }
     }
 
-
-
-
-
-
-
-
     public Jogador JogadorDaVez() {
         return Array.Find(jogadores, j => j.vezJogador);
     }
@@ -118,6 +111,10 @@ public class GameControl : MonoBehaviour {
         foreach (Jogador jogador in jogadores) {
             jogador.vezJogador = (jogador.idJogador.Equals(vezJogador));
         }
+    }
+
+    public Jogador RetornaJogadorPorId(long idJogador) {
+        return Array.Find(jogadores, j => j.idJogador.Equals(idJogador));
     }
 
     private void AtualizaVezJogador() {

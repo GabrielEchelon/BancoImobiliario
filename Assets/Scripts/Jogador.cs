@@ -20,7 +20,9 @@ public class Jogador : MonoBehaviour {
 
     public bool preso = false; 
 
-    private Saldo saldo; 
+    [HideInInspector] public Saldo saldo;
+    [HideInInspector] public bool aluguelPago = false;
+    [HideInInspector] public bool cartaSelecionada = false;
 
     private void Start () {
         transform.position = waypoints[posicaoAtual].transform.position;
@@ -38,6 +40,8 @@ public class Jogador : MonoBehaviour {
         }
 
         if(movimentoPermitido) {
+            aluguelPago = false;
+            cartaSelecionada = false;
             MoveJogador();
         }
 

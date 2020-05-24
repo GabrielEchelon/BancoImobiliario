@@ -9,8 +9,8 @@ public class Saldo : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI txtPatrimonioPlayer; 
     [SerializeField] private TextMeshProUGUI txtPatrimonioIdent; 
 
-    [SerializeField] public float saldoPlayer = 0f; 
-    [SerializeField] public float patrimonioPlayer = 0f; 
+    [SerializeField] private float saldoPlayer = 0f; 
+    [SerializeField] private float patrimonioPlayer = 0f; 
     [SerializeField] public float valorDebitoCredito = 0f; 
     [HideInInspector] public long idJogador = 0L; 
 
@@ -37,6 +37,10 @@ public class Saldo : MonoBehaviour {
         }
     }
 
+    public float getSaldo() {
+        return saldoPlayer;
+    }
+
     private void ExibeSaldos() {
         txtSaldoPlayer.text = "R$ " + saldoPlayer.ToString("#,#");
     }
@@ -61,7 +65,7 @@ public class Saldo : MonoBehaviour {
         if (saldoPlayer != valorDesejado) {
             if(saldoPlayer < valorDesejado) {
                 for (float i = saldoPlayer; i < valorDesejado; i = saldoPlayer) {
-                    saldoPlayer += 1000.0f;
+                    saldoPlayer += 500.0f;
                     ExibeSaldos();
 
                     yield return new WaitForSecondsRealtime(0.00005f);
@@ -69,7 +73,7 @@ public class Saldo : MonoBehaviour {
                 }
             } else {
                 for (float i = saldoPlayer; i > valorDesejado; i = saldoPlayer) {
-                    saldoPlayer -= 1000.0f;
+                    saldoPlayer -= 500.0f;
                     ExibeSaldos();
 
                     yield return new WaitForSeconds(0.00005f);

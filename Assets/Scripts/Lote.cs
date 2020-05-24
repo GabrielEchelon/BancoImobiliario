@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Lote : MonoBehaviour
-{
+public class Lote : MonoBehaviour {
 
     [SerializeField] private int idCasa = 0;
     [SerializeField] public string nome = "";
     [SerializeField] public string descricao = "";
 
-    [SerializeField] public string corTexto = "";
-    [SerializeField] public string corPrimaria = "";
-    [SerializeField] public string corSecundaria = "";
+    [SerializeField] public Color corTexto;
+    [SerializeField] public Color corPrimaria;
+    [SerializeField] public Color corSecundaria;
 
-    [SerializeField] private bool compravel = true;
+    [SerializeField] public bool compravel = true;
     [SerializeField] public bool empresa = false;
     [SerializeField] public bool sorteReves = false;
     [SerializeField] public bool descritivo = false;
+    [SerializeField] public bool creditoDebito = false;
 
     [SerializeField] public float valorCompra = 0.0f;
     [SerializeField] public float valorVenda = 0.0f;
@@ -24,11 +24,19 @@ public class Lote : MonoBehaviour
     [SerializeField] public float valorConstrucaoCasa = 0.0f;
     [SerializeField] public float valorConstrucaoHotel = 0.0f;
 
-    [SerializeField] public int dono = 0;
+    [SerializeField] public float valorCreditoDebito = 0.0f;
+
+    [SerializeField] public long dono = 0L;
+
+    [HideInInspector] public bool[] construcoes;
 
     private void Start() {
 
-        if(compravel && !empresa && !sorteReves) {
+        /*for (int i = 0; i < 5; i++) {
+            construcoes[i] = false;
+        }*/
+
+        if (compravel && !empresa && !sorteReves) {
             valorVenda = valorCompra / 2;
             valorConstrucaoCasa = valorCompra * 0.2f;
             valorConstrucaoHotel = valorCompra * 0.4f;
@@ -37,6 +45,20 @@ public class Lote : MonoBehaviour
     }
 
     public bool LoteCompravel() {
-        return dono == 0 && compravel;
+        return dono == 0L && compravel;
     }
+
+    /*private void CompraConstrucao() {
+        for(int i = 0; i < construcoes.Length; i++) {
+            if (!construcoes[i]) {
+                construcoes[i] = true;
+                break;
+            }
+        }
+    }
+    */
+    private void AtualizaValores() {
+        
+    }
+
 }
