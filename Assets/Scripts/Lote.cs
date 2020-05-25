@@ -5,6 +5,7 @@ using UnityEngine;
 public class Lote : MonoBehaviour {
 
     [SerializeField] private int idCasa = 0;
+    [SerializeField] public int idCor = 0;
     [SerializeField] public string nome = "";
     [SerializeField] public string descricao = "";
 
@@ -28,14 +29,20 @@ public class Lote : MonoBehaviour {
 
     [SerializeField] public long dono = 0L;
 
-    [HideInInspector] public bool[] construcoes;
+    [SerializeField] public SpriteRenderer[] sprCasas;
+    [SerializeField] public SpriteRenderer[] sprHoteis;
+
+    [HideInInspector] public int casas = 0;
+    [HideInInspector] public int hotel = 0;
+
+    private void Update() {
+        if (compravel && !empresa && !sorteReves) {
+            AtualizaValores();
+            ExibeCasas();
+        }
+    }
 
     private void Start() {
-
-        /*for (int i = 0; i < 5; i++) {
-            construcoes[i] = false;
-        }*/
-
         if (compravel && !empresa && !sorteReves) {
             valorVenda = valorCompra / 2;
             valorConstrucaoCasa = valorCompra * 0.2f;
@@ -44,21 +51,44 @@ public class Lote : MonoBehaviour {
         }
     }
 
-    public bool LoteCompravel() {
-        return dono == 0L && compravel;
-    }
+    private void ExibeCasas() {
+        if(casas > 0) {
+            for(int i = 0; i < casas; i++) {
+                sprCasas[i].gameObject.SetActive(true);
+            }
+        } else {
+            foreach(SpriteRenderer spr in sprCasas) {
+                spr.gameObject.SetActive(false);
+            }
+        }
 
-    /*private void CompraConstrucao() {
-        for(int i = 0; i < construcoes.Length; i++) {
-            if (!construcoes[i]) {
-                construcoes[i] = true;
-                break;
+        if (hotel > 0) {
+            for (int i = 0; i < hotel; i++) {
+                sprHoteis[i].gameObject.SetActive(true);
+            }
+        } else {
+            foreach (SpriteRenderer spr in sprHoteis) {
+                spr.gameObject.SetActive(false);
             }
         }
     }
-    */
+
     private void AtualizaValores() {
-        
+        if(casas > 0) {
+            valorVenda = (valorCompra / 2) * (casas + 1);
+            valorConstrucaoCasa = (valorCompra * 0.2f) * (casas + 1);
+            valorAluguel = (valorCompra * 0.01f) * (casas + 1);
+        }
+
+        if(hotel > 0) {
+            valorVenda = (valorCompra / 2) * (hotel + 5);
+            valorConstrucaoCasa = (valorCompra * 0.2f) * (hotel + 5);
+            valorAluguel = (valorCompra * 0.01f) * (hotel + 5);
+        }
+    }
+
+    public bool LoteCompravel() {
+        return dono == 0L && compravel;
     }
 
 }

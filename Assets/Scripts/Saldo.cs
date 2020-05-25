@@ -30,7 +30,7 @@ public class Saldo : MonoBehaviour {
         }
     }
 
-    public float getSaldo() {
+    public float GetSaldo() {
         return saldoPlayer;
     }
 

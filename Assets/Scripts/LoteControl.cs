@@ -49,15 +49,39 @@ public class LoteControl : MonoBehaviour {
         if (!jogador.movimentoPermitido) {
             AtualizaInfoLote();
             VerificaAluguel();
+            VerificaCreditoDebito();
+        }
+    }
+
+    public void ComprarCasa() {
+        if(lote.casas < 4) {
+            jogador.AtualizaSaldoJogador(lote.valorConstrucaoCasa * -1f);
+            lote.casas++;
+        } else {
+            ComprarHotel();
+        }
+    }
+
+    private void ComprarHotel() {
+        if(lote.hotel < 1) {
+            jogador.AtualizaSaldoJogador(lote.valorConstrucaoHotel * -1f);
+            lote.hotel++;
+        }
+    }
+
+    private void VerificaCreditoDebito() {
+        if (lote.creditoDebito && !jogador.creditoDebitoPago) {
+            jogador.AtualizaSaldoJogador(lote.valorCreditoDebito);
+            jogador.creditoDebitoPago = true;
         }
     }
 
     private void VerificaAluguel() {
         if(lote.dono != jogador.idJogador && lote.dono != 0L) {
-            if (!jogador.aluguelPago) {
-                jogador.saldo.valorDebitoCredito = (lote.valorAluguel * -1f);
-                gameControl.RetornaJogadorPorId(lote.dono).saldo.valorDebitoCredito = lote.valorAluguel;
-                jogador.aluguelPago = true;
+            if (!jogador.creditoDebitoPago) {
+                jogador.AtualizaSaldoJogador(lote.valorAluguel * -1f);
+                gameControl.RetornaJogadorPorId(lote.dono).AtualizaSaldoJogador(lote.valorAluguel);
+                jogador.creditoDebitoPago = true;
             }
         }
     }
@@ -67,12 +91,12 @@ public class LoteControl : MonoBehaviour {
             lote.compravel = true;
             lote.dono = 0L;
 
-            jogador.saldo.valorDebitoCredito = lote.valorVenda;
+            jogador.AtualizaSaldoJogador(lote.valorVenda);
         } else {
             lote.compravel = false;
             lote.dono = jogador.idJogador;
 
-            jogador.saldo.valorDebitoCredito = (lote.valorCompra * -1f);
+            jogador.AtualizaSaldoJogador(lote.valorCompra * -1f);
         }
         
     }
@@ -81,9 +105,6 @@ public class LoteControl : MonoBehaviour {
         lote = jogador.waypoints[jogador.posicaoAtual].GetComponent<Lote>();
 
         AtualizaSorteReves();
-        if (lote.empresa) {
-
-        }
         AtualizaTxtsLote();
         AtualizaCores();
         AtualizaBotões();
@@ -103,18 +124,26 @@ public class LoteControl : MonoBehaviour {
 
         botaoComprarVender.gameObject.SetActive(false);
         botaoConstruir.gameObject.SetActive(false);
+        botaoConstruir.gameObject.SetActive(false);
 
         if (lote.LoteCompravel()) {
             txtComprarVender.text = "Comprar Lote";
             botaoComprarVender.gameObject.SetActive(true);
 
-            botaoComprarVender.interactable = jogador.saldo.getSaldo() >= lote.valorCompra;
+            botaoComprarVender.interactable = jogador.GetSaldoJogador() >= lote.valorCompra;
 
         } else if (lote.dono == jogador.idJogador) {
             botaoConstruir.gameObject.SetActive(true);
 
             txtComprarVender.text = "Vender Lote";
-            botaoComprarVender.gameObject.SetActive(true);            
+            botaoComprarVender.gameObject.SetActive(true);
+            botaoConstruir.gameObject.SetActive(true);
+
+            if (jogador.PossuiTodosLotes(lote.idCor)) {
+                botaoConstruir.interactable = true;
+            } else {
+                botaoConstruir.interactable = false;
+            }
         }
 
     }

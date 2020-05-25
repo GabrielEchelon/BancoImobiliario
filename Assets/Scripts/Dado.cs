@@ -43,7 +43,7 @@ public class Dado : MonoBehaviour {
         //VerificaDados(4, 4);
         VerificaDados((faceDadoRandom1 + 1), (faceDadoRandom2 + 1));
         gameControl.valorDado = (faceDadoRandom1 + 1) + (faceDadoRandom2 + 1);
-        //gameControl.valorDado = 2;
+        //gameControl.valorDado = 3;
 
         coroutineDisponivel = true;
     }

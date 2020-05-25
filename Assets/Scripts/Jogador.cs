@@ -2,6 +2,7 @@
 using Unity.Collections;
 using UnityEngine;
 using TMPro;
+using System.Collections.Generic;
 
 public class Jogador : MonoBehaviour {
 
@@ -20,8 +21,8 @@ public class Jogador : MonoBehaviour {
 
     public bool preso = false; 
 
-    [HideInInspector] public Saldo saldo;
-    [HideInInspector] public bool aluguelPago = false;
+    [HideInInspector] private Saldo saldo;
+    [HideInInspector] public bool creditoDebitoPago = false;
     [HideInInspector] public bool cartaSelecionada = false;
 
     private void Start () {
@@ -40,7 +41,7 @@ public class Jogador : MonoBehaviour {
         }
 
         if(movimentoPermitido) {
-            aluguelPago = false;
+            creditoDebitoPago = false;
             cartaSelecionada = false;
             MoveJogador();
         }
@@ -66,5 +67,26 @@ public class Jogador : MonoBehaviour {
         if (transform.position == waypoints[posicaoAtual].transform.position) {
             posicaoAtual += 1;
         }
+    }
+
+    public float GetSaldoJogador() {
+        return saldo.GetSaldo();
+    }
+
+    public void AtualizaSaldoJogador(float valor) {
+        saldo.valorDebitoCredito = valor;
+    }
+
+    public bool PossuiTodosLotes(int idCor) {
+        for(int i = 0; i < waypoints.Length; i++) {
+            Lote lote = waypoints[i].GetComponent<Lote>();
+            if (lote.idCor.Equals(idCor)) {
+                if (lote.dono != idJogador) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
     }
 }

@@ -321,6 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 15
+  idCor: 3
   nome: "Rua da Consola\xE7\xE3o"
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -338,7 +339,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &56987564
 GameObject:
   m_ObjectHideFlags: 0
@@ -739,6 +747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 8
+  idCor: 2
   nome: Rua Oscar Freire
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -756,7 +765,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &79728713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,6 +1235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 22
+  idCor: 0
   nome: Receita Federal
   descricao: Pague o imposto de renda, R$ 200.000.
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -1236,7 +1253,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: -200000
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &100424487
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,6 +1462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 9
+  idCor: 2
   nome: Av Ibirapuera
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -1459,7 +1480,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &150505661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,7 +1661,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &154326719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1742,6 +1770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 38
+  idCor: 0
   nome: "Restitui\xE7\xE3o do Imposto de Renda"
   descricao: "Receba a sua restitui\xE7\xE3o do IR"
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -1759,7 +1788,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 200000
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &163422331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,7 +1826,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 445, y: -397}
+  m_AnchoredPosition: {x: 445, y: -386.3}
   m_SizeDelta: {x: 335, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &163422333
@@ -1960,6 +1992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 27
+  idCor: 6
   nome: Av Paulista
   descricao: 
   corTexto: {r: 1, g: 1, b: 1, a: 1}
@@ -1977,7 +2010,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &197906613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2022,6 +2062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 7
+  idCor: 0
   nome: Ponto Com
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -2039,7 +2080,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &241580481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,6 +2128,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 19
+  idCor: 0
   nome: "Cr\xE9ditos de Carbono"
   descricao: "Receba R$150.000 em cr\xE9ditos"
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -2101,7 +2146,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 150000
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &255731416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2575,7 +2623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &303530071
 Transform:
   m_ObjectHideFlags: 0
@@ -2728,7 +2776,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &325974637
 Transform:
   m_ObjectHideFlags: 0
@@ -2837,6 +2885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 14
+  idCor: 0
   nome: "Companhia de Minera\xE7\xE3o"
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -2854,7 +2903,47 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
+--- !u!1 &331087290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 331087291}
+  m_Layer: 5
+  m_Name: Icons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &331087291
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331087290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 917670471}
+  - {fileID: 627970382}
+  m_Father: {fileID: 1296529437}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &355938320
 GameObject:
   m_ObjectHideFlags: 0
@@ -2999,8 +3088,7 @@ MonoBehaviour:
   txtVezJogador: {fileID: 453193747}
   vezJogador: 0
   preso: 0
-  saldo: {fileID: 0}
-  aluguelPago: 0
+  creditoDebitoPago: 0
   cartaSelecionada: 0
 --- !u!114 &355938324
 MonoBehaviour:
@@ -3015,10 +3103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtSaldoPlayer: {fileID: 1935328497}
-  txtPatrimonioPlayer: {fileID: 1202100177}
-  txtPatrimonioIdent: {fileID: 905971503}
   saldoPlayer: 1500000
-  patrimonioPlayer: 0
   valorDebitoCredito: 0
   idJogador: 1
 --- !u!1 &357280374
@@ -3496,6 +3581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 4
+  idCor: 1
   nome: Av Beira Mar
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -3513,7 +3599,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &411882074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3599,6 +3692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 1
+  idCor: 1
   nome: "Jardim Bot\xE2nico"
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -3616,7 +3710,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &453193745
 GameObject:
   m_ObjectHideFlags: 0
@@ -3817,6 +3918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 30
+  idCor: 0
   nome: "V\xE1 para a pris\xE3o!"
   descricao: "Voc\xEA est\xE1 preso, rode dados iguais para sair da pris\xE3o."
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -3834,7 +3936,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &466352663
 GameObject:
   m_ObjectHideFlags: 0
@@ -3879,6 +3984,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 28
+  idCor: 0
   nome: "SorteRev\xE9s"
   descricao: Clique nas cartas do tabuleiro para ler uma.
   corTexto: {r: 1, g: 1, b: 1, a: 1}
@@ -3896,7 +4002,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &475137949
 GameObject:
   m_ObjectHideFlags: 0
@@ -4337,6 +4446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 2
+  idCor: 0
   nome: "Companhia de For\xE7a e Luz"
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -4354,7 +4464,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &558119381
 GameObject:
   m_ObjectHideFlags: 0
@@ -4399,6 +4512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 0
+  idCor: 0
   nome: "In\xEDcio"
   descricao: "Ap\xF3s a primeira volta, receba seu pr\xF3-labore de R$200.000"
   corTexto: {r: 1, g: 0.9960785, b: 1, a: 1}
@@ -4416,7 +4530,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &576203300
 GameObject:
   m_ObjectHideFlags: 0
@@ -4561,8 +4678,7 @@ MonoBehaviour:
   txtVezJogador: {fileID: 835039207}
   vezJogador: 0
   preso: 0
-  saldo: {fileID: 0}
-  aluguelPago: 0
+  creditoDebitoPago: 0
   cartaSelecionada: 0
 --- !u!114 &576203304
 MonoBehaviour:
@@ -4577,10 +4693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txtSaldoPlayer: {fileID: 1516121860}
-  txtPatrimonioPlayer: {fileID: 1465993655}
-  txtPatrimonioIdent: {fileID: 2115291696}
   saldoPlayer: 1500000
-  patrimonioPlayer: 0
   valorDebitoCredito: 0
   idJogador: 2
 --- !u!1 &595561599
@@ -4784,6 +4897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 10
+  idCor: 0
   nome: "Pris\xE3o/Visitas"
   descricao: Visitas seguem em frente. Jogadores presos devem rodar dados iguais
     para sair.
@@ -4802,7 +4916,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &627970381
 GameObject:
   m_ObjectHideFlags: 0
@@ -4832,13 +4949,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1296529437}
-  m_RootOrder: 2
+  m_Father: {fileID: 331087291}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1126, y: 11}
-  m_SizeDelta: {x: -1820, y: -980}
+  m_AnchoredPosition: {x: -113.22217, y: -479}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &627970383
 MonoBehaviour:
@@ -4920,6 +5037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 37
+  idCor: 8
   nome: "Marina da Gl\xF3ria"
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -4937,39 +5055,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
---- !u!1 &642650395
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 642650396}
-  m_Layer: 0
-  m_Name: Patrimonios
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &642650396
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 642650395}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1843821226}
-  - {fileID: 783546124}
-  m_Father: {fileID: 652495220}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &652495219
 GameObject:
   m_ObjectHideFlags: 0
@@ -4999,7 +5092,6 @@ Transform:
   m_Children:
   - {fileID: 1547746804}
   - {fileID: 1484648838}
-  - {fileID: 642650396}
   - {fileID: 2099100386}
   - {fileID: 1369607654}
   m_Father: {fileID: 1296529437}
@@ -5119,6 +5211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 26
+  idCor: 6
   nome: "Ponte do Gua\xEDba"
   descricao: 
   corTexto: {r: 1, g: 1, b: 1, a: 1}
@@ -5136,7 +5229,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &689317987
 GameObject:
   m_ObjectHideFlags: 0
@@ -5161,7 +5261,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689317987}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 148, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 453193746}
@@ -5245,6 +5345,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 36
+  idCor: 8
   nome: "Ponto Rio-Niter\xF3i"
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -5262,7 +5363,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &748102230
 GameObject:
   m_ObjectHideFlags: 0
@@ -5344,78 +5452,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &758091249
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 758091250}
-  - component: {fileID: 758091252}
-  - component: {fileID: 758091251}
-  m_Layer: 0
-  m_Name: TMP SubMeshUI [trebuc SDF Material + LiberationSans SDF Atlas]
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &758091250
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758091249}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2115291695}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &758091251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758091249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 1.25
-  m_canvasRenderer: {fileID: 758091252}
-  m_TextComponent: {fileID: 2115291696}
-  m_materialReferenceIndex: 1
---- !u!222 &758091252
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758091249}
-  m_CullTransparentMesh: 0
 --- !u!1 &758187793
 GameObject:
   m_ObjectHideFlags: 0
@@ -5606,38 +5642,6 @@ Transform:
   m_Father: {fileID: 2099100386}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &783546123
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 783546124}
-  m_Layer: 0
-  m_Name: "Vari\xE1veis"
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &783546124
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 783546123}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1202100176}
-  - {fileID: 1465993654}
-  m_Father: {fileID: 642650396}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &794496757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5714,6 +5718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 21
+  idCor: 0
   nome: "SorteRev\xE9s"
   descricao: Clique nas cartas do tabuleiro para ler uma.
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -5731,7 +5736,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &817863912
 GameObject:
   m_ObjectHideFlags: 0
@@ -5759,16 +5767,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817863912}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.11491382}
-  m_LocalScale: {x: 2.9288142, y: 2.9288142, z: 2.9288142}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.0338986, y: 2.0338986, z: 2.0338986}
   m_Children:
   - {fileID: 290901088}
-  m_Father: {fileID: 2099100386}
-  m_RootOrder: 6
+  m_Father: {fileID: 1717257178}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -456.82108, y: -236.20091}
+  m_AnchoredPosition: {x: -717.35596, y: -348.4068}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &817863914
@@ -6143,163 +6151,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893664343}
   m_CullTransparentMesh: 0
---- !u!1 &905971501
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 905971502}
-  - component: {fileID: 905971504}
-  - component: {fileID: 905971503}
-  m_Layer: 0
-  m_Name: TxtPatrimonio1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &905971502
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905971501}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4400004, y: 1.4400004, z: 1}
-  m_Children:
-  - {fileID: 1387590989}
-  m_Father: {fileID: 1843821226}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 445.00003, y: 914}
-  m_SizeDelta: {x: 335, y: 55}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &905971503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905971501}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Patrim\xF4nio:"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b62ca51fa8f55b429f146a989b8aaa3, type: 2}
-  m_sharedMaterial: {fileID: -8174247538947062278, guid: 0b62ca51fa8f55b429f146a989b8aaa3,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 44
-  m_fontSizeBase: 44
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 516
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 905971503}
-    characterCount: 11
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 2
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 1387590990}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &905971504
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 905971501}
-  m_CullTransparentMesh: 0
 --- !u!1 &917670470
 GameObject:
   m_ObjectHideFlags: 0
@@ -6325,17 +6176,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917670470}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1296529437}
-  m_RootOrder: 1
+  m_Father: {fileID: 331087291}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1126, y: -11}
-  m_SizeDelta: {x: -1820, y: -980}
+  m_AnchoredPosition: {x: -113.22217, y: 479}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &917670472
 MonoBehaviour:
@@ -6417,6 +6268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 29
+  idCor: 6
   nome: Av Recife
   descricao: 
   corTexto: {r: 1, g: 1, b: 1, a: 1}
@@ -6434,7 +6286,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &938495953
 GameObject:
   m_ObjectHideFlags: 0
@@ -6479,6 +6338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 23
+  idCor: 5
   nome: "S\xE3o Jo\xE3o"
   descricao: 
   corTexto: {r: 1, g: 1, b: 1, a: 1}
@@ -6496,7 +6356,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &940108040
 GameObject:
   m_ObjectHideFlags: 0
@@ -6698,6 +6565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 24
+  idCor: 5
   nome: Av Ipiranga
   descricao: 
   corTexto: {r: 1, g: 1, b: 1, a: 1}
@@ -6715,7 +6583,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &980986796
 GameObject:
   m_ObjectHideFlags: 0
@@ -6760,6 +6635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 33
+  idCor: 0
   nome: "SorteRev\xE9s"
   descricao: Clique nas cartas do tabuleiro para ler uma.
   corTexto: {r: 1, g: 1, b: 1, a: 1}
@@ -6777,7 +6653,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &995981244
 GameObject:
   m_ObjectHideFlags: 0
@@ -6822,6 +6701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 20
+  idCor: 0
   nome: Feriado!
   descricao: "Hoje \xE9 feriado, passe a vez."
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -6839,7 +6719,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &1000724768
 GameObject:
   m_ObjectHideFlags: 0
@@ -6867,16 +6750,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000724768}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.11491384}
-  m_LocalScale: {x: 2.9288166, y: 2.9288166, z: 2.9288166}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.0339, y: 2.0339, z: 2.0339}
   m_Children:
   - {fileID: 381217157}
-  m_Father: {fileID: 1547746804}
-  m_RootOrder: 1
+  m_Father: {fileID: 1553111729}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1526, y: -189}
+  m_AnchoredPosition: {x: 659.6029, y: -315.62842}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1000724770
@@ -7251,6 +7134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 16
+  idCor: 0
   nome: "SorteRev\xE9s"
   descricao: Clique nas cartas do tabuleiro para ler uma.
   corTexto: {r: 1, g: 1, b: 1, a: 1}
@@ -7268,7 +7152,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &1070011102
 GameObject:
   m_ObjectHideFlags: 0
@@ -7548,6 +7435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 12
+  idCor: 3
   nome: "Pra\xE7a da S\xE9"
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -7565,7 +7453,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &1090636859
 GameObject:
   m_ObjectHideFlags: 0
@@ -7593,16 +7488,16 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1090636859}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.11491382}
-  m_LocalScale: {x: 2.9288142, y: 2.9288142, z: 2.9288142}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2.0338986, y: 2.0338986, z: 2.0338986}
   m_Children:
   - {fileID: 2147538}
-  m_Father: {fileID: 2099100386}
-  m_RootOrder: 7
+  m_Father: {fileID: 1717257178}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -456.82108, y: -135}
+  m_AnchoredPosition: {x: -717.35596, y: -278.12842}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1090636861
@@ -7647,7 +7542,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1090636862}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1668051651}
+        m_MethodName: ComprarCasa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1090636862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7728,6 +7634,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 35
+  idCor: 0
   nome: Companhia de Saneamento
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -7745,163 +7652,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
---- !u!1 &1202100175
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1202100176}
-  - component: {fileID: 1202100178}
-  - component: {fileID: 1202100177}
-  m_Layer: 5
-  m_Name: PatrimonioJogador1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1202100176
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202100175}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.11491112}
-  m_LocalScale: {x: 1.4400004, y: 1.4400004, z: 1.4400004}
-  m_Children: []
-  m_Father: {fileID: 783546124}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 948.0001, y: 911}
-  m_SizeDelta: {x: 335, y: 55}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1202100177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202100175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: R$ 0.00000
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b62ca51fa8f55b429f146a989b8aaa3, type: 2}
-  m_sharedMaterial: {fileID: -8174247538947062278, guid: 0b62ca51fa8f55b429f146a989b8aaa3,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 44
-  m_fontSizeBase: 44
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 257
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 1202100177}
-    characterCount: 10
-    spriteCount: 0
-    spaceCount: 1
-    wordCount: 3
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1202100178
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202100175}
-  m_CullTransparentMesh: 0
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &1209664541
 GameObject:
   m_ObjectHideFlags: 0
@@ -8068,6 +7822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 32
+  idCor: 7
   nome: "Pra\xE7a Castro Alves"
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -8085,7 +7840,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &1252967404
 GameObject:
   m_ObjectHideFlags: 0
@@ -8120,7 +7882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 445, y: 983}
+  m_AnchoredPosition: {x: 445, y: 991.3}
   m_SizeDelta: {x: 335, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1252967406
@@ -8286,6 +8048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 6
+  idCor: 2
   nome: Av Juscelino Kubitschek
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -8303,7 +8066,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &1296529433
 GameObject:
   m_ObjectHideFlags: 0
@@ -8395,8 +8165,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 652495220}
-  - {fileID: 917670471}
-  - {fileID: 627970382}
+  - {fileID: 1653213785}
+  - {fileID: 331087291}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8449,6 +8219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 3
+  idCor: 1
   nome: Av Niemeyer
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -8466,7 +8237,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &1338736848
 GameObject:
   m_ObjectHideFlags: 0
@@ -8511,6 +8289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 18
+  idCor: 4
   nome: Jardins
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -8528,7 +8307,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &1342117258
 GameObject:
   m_ObjectHideFlags: 0
@@ -8835,80 +8621,8 @@ Transform:
   - {fileID: 1354262305}
   - {fileID: 517588164}
   m_Father: {fileID: 652495220}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1387590988
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1387590989}
-  - component: {fileID: 1387590991}
-  - component: {fileID: 1387590990}
-  m_Layer: 0
-  m_Name: TMP SubMeshUI [trebuc SDF Material + LiberationSans SDF Atlas]
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1387590989
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387590988}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 905971502}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1387590990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387590988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_spriteAsset: {fileID: 0}
-  m_material: {fileID: 0}
-  m_sharedMaterial: {fileID: 0}
-  m_isDefaultMaterial: 0
-  m_padding: 1.25
-  m_canvasRenderer: {fileID: 1387590991}
-  m_TextComponent: {fileID: 905971503}
-  m_materialReferenceIndex: 1
---- !u!222 &1387590991
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387590988}
-  m_CullTransparentMesh: 0
 --- !u!1 &1392185751
 GameObject:
   m_ObjectHideFlags: 0
@@ -8925,7 +8639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1392185752
 Transform:
   m_ObjectHideFlags: 0
@@ -9034,6 +8748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 13
+  idCor: 3
   nome: "Viaduto do Ch\xE1"
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -9051,163 +8766,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
---- !u!1 &1465993653
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1465993654}
-  - component: {fileID: 1465993656}
-  - component: {fileID: 1465993655}
-  m_Layer: 5
-  m_Name: PatrimonioJogador2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1465993654
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465993653}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.11491112}
-  m_LocalScale: {x: 1.4400004, y: 1.4400004, z: 1.4400004}
-  m_Children: []
-  m_Father: {fileID: 783546124}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 948.0001, y: -466}
-  m_SizeDelta: {x: 335, y: 55}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1465993655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465993653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: R$ 0.00000
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b62ca51fa8f55b429f146a989b8aaa3, type: 2}
-  m_sharedMaterial: {fileID: -8174247538947062278, guid: 0b62ca51fa8f55b429f146a989b8aaa3,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 44
-  m_fontSizeBase: 44
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 257
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 1465993655}
-    characterCount: 10
-    spriteCount: 0
-    spaceCount: 1
-    wordCount: 3
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1465993656
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465993653}
-  m_CullTransparentMesh: 0
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &1467681896
 GameObject:
   m_ObjectHideFlags: 0
@@ -9252,6 +8818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 11
+  idCor: 0
   nome: "SorteRev\xE9s"
   descricao: Clique nas cartas do tabuleiro para ler uma.
   corTexto: {r: 1, g: 1, b: 1, a: 1}
@@ -9269,7 +8836,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &1475983034
 GameObject:
   m_ObjectHideFlags: 0
@@ -9451,7 +9021,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1484648837}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 699630072}
@@ -9650,7 +9220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 948.00006, y: -397}
+  m_AnchoredPosition: {x: 948.00006, y: -389}
   m_SizeDelta: {x: 335, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1516121860
@@ -9800,10 +9370,45 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 689317988}
-  - {fileID: 1000724769}
   m_Father: {fileID: 652495220}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1553111728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1553111729}
+  m_Layer: 5
+  m_Name: VezJogador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1553111729
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1553111728}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1000724769}
+  m_Father: {fileID: 1653213785}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1554189493
 GameObject:
   m_ObjectHideFlags: 0
@@ -10326,6 +9931,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648525477}
   m_CullTransparentMesh: 0
+--- !u!1 &1653213784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1653213785}
+  m_Layer: 5
+  m_Name: Buttons
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1653213785
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653213784}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1717257178}
+  - {fileID: 1553111729}
+  m_Father: {fileID: 1296529437}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1668051649
 GameObject:
   m_ObjectHideFlags: 0
@@ -10740,6 +10382,43 @@ MonoBehaviour:
   idCarta: 7
   descricao: "Voc\xEA ganhou na loteria."
   valor: 1000000
+--- !u!1 &1717257177
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1717257178}
+  m_Layer: 5
+  m_Name: Lote
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1717257178
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1717257177}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 817863913}
+  - {fileID: 1090636860}
+  m_Father: {fileID: 1653213785}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1740871988
 GameObject:
   m_ObjectHideFlags: 0
@@ -11092,6 +10771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 34
+  idCor: 7
   nome: Av do Contorno
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -11109,7 +10789,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &1833637921
 GameObject:
   m_ObjectHideFlags: 0
@@ -11182,38 +10869,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833637921}
   m_CullTransparentMesh: 0
---- !u!1 &1843821225
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1843821226}
-  m_Layer: 0
-  m_Name: Fixos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1843821226
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843821225}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 905971502}
-  - {fileID: 2115291695}
-  m_Father: {fileID: 642650396}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1844131225
 GameObject:
   m_ObjectHideFlags: 0
@@ -11330,6 +10985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 17
+  idCor: 4
   nome: "Jardim Bot\xE2nico"
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -11347,7 +11003,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &1935328495
 GameObject:
   m_ObjectHideFlags: 0
@@ -11382,7 +11045,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 948.00006, y: 983.00006}
+  m_AnchoredPosition: {x: 948.00006, y: 989.2}
   m_SizeDelta: {x: 335, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1935328497
@@ -11862,6 +11525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 31
+  idCor: 7
   nome: "Pra\xE7a dos Tr\xEAs Poderes"
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -11879,7 +11543,14 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
 --- !u!1 &2023243147
 GameObject:
   m_ObjectHideFlags: 0
@@ -11924,6 +11595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 5
+  idCor: 0
   nome: "SorteRev\xE9s"
   descricao: Clique nas cartas do tabuleiro para ler uma.
   corTexto: {r: 1, g: 1, b: 1, a: 1}
@@ -11941,7 +11613,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &2050964830
 GameObject:
   m_ObjectHideFlags: 0
@@ -12165,168 +11840,9 @@ Transform:
   - {fileID: 79728714}
   - {fileID: 411882075}
   - {fileID: 774637555}
-  - {fileID: 817863913}
-  - {fileID: 1090636860}
   m_Father: {fileID: 652495220}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2115291694
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2115291695}
-  - component: {fileID: 2115291697}
-  - component: {fileID: 2115291696}
-  m_Layer: 0
-  m_Name: TxtPatrimonio2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2115291695
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2115291694}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4400004, y: 1.4400004, z: 1}
-  m_Children:
-  - {fileID: 758091250}
-  m_Father: {fileID: 1843821226}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 445.00003, y: -466}
-  m_SizeDelta: {x: 335, y: 55}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2115291696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2115291694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Patrim\xF4nio:"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0b62ca51fa8f55b429f146a989b8aaa3, type: 2}
-  m_sharedMaterial: {fileID: -8174247538947062278, guid: 0b62ca51fa8f55b429f146a989b8aaa3,
-    type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
-  m_fontSize: 44
-  m_fontSizeBase: 44
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_textAlignment: 516
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
-  m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
-  m_enableKerning: 1
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 2115291696}
-    characterCount: 11
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 2
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
-  m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 758091251}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &2115291697
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2115291694}
-  m_CullTransparentMesh: 0
 --- !u!1 &2130272451
 GameObject:
   m_ObjectHideFlags: 0
@@ -12371,6 +11887,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 25
+  idCor: 0
   nome: Companhia Petrolifera
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -12388,7 +11905,10 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas: []
+  sprHoteis: []
+  casas: 0
+  hotel: 0
 --- !u!1 &2140225170
 GameObject:
   m_ObjectHideFlags: 0
@@ -12433,6 +11953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idCasa: 39
+  idCor: 8
   nome: Barra da Tijuca
   descricao: 
   corTexto: {r: 0, g: 0, b: 0, a: 1}
@@ -12450,4 +11971,11 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  construcoes: 
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
+  casas: 0
+  hotel: 0
