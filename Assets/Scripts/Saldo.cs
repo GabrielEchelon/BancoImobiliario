@@ -6,11 +6,8 @@ using TMPro;
 public class Saldo : MonoBehaviour {
 
     [SerializeField] private TextMeshProUGUI txtSaldoPlayer; 
-    [SerializeField] private TextMeshProUGUI txtPatrimonioPlayer; 
-    [SerializeField] private TextMeshProUGUI txtPatrimonioIdent; 
 
     [SerializeField] private float saldoPlayer = 0f; 
-    [SerializeField] private float patrimonioPlayer = 0f; 
     [SerializeField] public float valorDebitoCredito = 0f; 
     [HideInInspector] public long idJogador = 0L; 
 
@@ -20,15 +17,11 @@ public class Saldo : MonoBehaviour {
         if(saldoPlayer <= 0f) {
             saldoPlayer = 1500000f;
         }
-        if(patrimonioPlayer < 0f) {
-            patrimonioPlayer = 0f;
-        }
     }
 
     void Update(){
         if (idJogador != 0L) {
             ExibeSaldos();
-            ExibePatrimonios();
 
             if (coroutineSaldo && valorDebitoCredito != 0f) {
                 StartCoroutine(AtualizaSaldos(valorDebitoCredito));
@@ -43,17 +36,6 @@ public class Saldo : MonoBehaviour {
 
     private void ExibeSaldos() {
         txtSaldoPlayer.text = "R$ " + saldoPlayer.ToString("#,#");
-    }
-
-    private void ExibePatrimonios() {
-        if (patrimonioPlayer > 0d) {
-            txtPatrimonioPlayer.gameObject.SetActive(true);
-            txtPatrimonioIdent.gameObject.SetActive(true);
-            txtPatrimonioPlayer.text = "R$ " + saldoPlayer.ToString("#,#");
-        } else {
-            txtPatrimonioPlayer.gameObject.SetActive(false);
-            txtPatrimonioIdent.gameObject.SetActive(false);
-        }
     }
 
     public IEnumerator AtualizaSaldos(float valorAlteracao) {

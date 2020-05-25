@@ -56,6 +56,7 @@ public class Jogador : MonoBehaviour {
 
         if (posicaoAtual > tamanhoTabuleiro) {
             posicaoAtual = 0;
+            saldo.valorDebitoCredito = 200000f;
         }
 
         transform.position = Vector2.MoveTowards(transform.position,
