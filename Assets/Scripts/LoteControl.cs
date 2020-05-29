@@ -37,6 +37,9 @@ public class LoteControl : MonoBehaviour {
     [SerializeField] private SpriteRenderer casaTitulo;
     [SerializeField] private SpriteRenderer casaDescricao;
 
+    [SerializeField] public SpriteRenderer[] sprCasas;
+    [SerializeField] public SpriteRenderer[] sprHoteis;
+
     [HideInInspector] public bool sorteReves = false;
 
     void Start(){
@@ -50,11 +53,34 @@ public class LoteControl : MonoBehaviour {
             AtualizaInfoLote();
             VerificaAluguel();
             VerificaCreditoDebito();
+            ExibeCasas();
+        }
+    }
+
+    private void ExibeCasas() {
+        if (lote.casas > 0) {
+            for (int i = 0; i < lote.casas; i++) {
+                sprCasas[i].gameObject.SetActive(true);
+            }
+        } else {
+            foreach (SpriteRenderer spr in sprCasas) {
+                spr.gameObject.SetActive(false);
+            }
+        }
+
+        if (lote.hotel > 0) {
+            for (int i = 0; i < lote.hotel; i++) {
+                sprHoteis[i].gameObject.SetActive(true);
+            }
+        } else {
+            foreach (SpriteRenderer spr in sprHoteis) {
+                spr.gameObject.SetActive(false);
+            }
         }
     }
 
     public void ComprarCasa() {
-        if(lote.casas < 4) {
+        if(lote.casas < 3) {
             jogador.AtualizaSaldoJogador(lote.valorConstrucaoCasa * -1f);
             lote.casas++;
         } else {

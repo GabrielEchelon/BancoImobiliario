@@ -29,17 +29,14 @@ public class Lote : MonoBehaviour {
 
     [SerializeField] public long dono = 0L;
 
-    [SerializeField] public SpriteRenderer[] sprCasas;
-    [SerializeField] public SpriteRenderer[] sprHoteis;
-
     [HideInInspector] public int casas = 0;
     [HideInInspector] public int hotel = 0;
 
     private void Update() {
         if (compravel && !empresa && !sorteReves) {
             AtualizaValores();
-            ExibeCasas();
         }
+        
     }
 
     private void Start() {
@@ -51,27 +48,6 @@ public class Lote : MonoBehaviour {
         }
     }
 
-    private void ExibeCasas() {
-        if(casas > 0) {
-            for(int i = 0; i < casas; i++) {
-                sprCasas[i].gameObject.SetActive(true);
-            }
-        } else {
-            foreach(SpriteRenderer spr in sprCasas) {
-                spr.gameObject.SetActive(false);
-            }
-        }
-
-        if (hotel > 0) {
-            for (int i = 0; i < hotel; i++) {
-                sprHoteis[i].gameObject.SetActive(true);
-            }
-        } else {
-            foreach (SpriteRenderer spr in sprHoteis) {
-                spr.gameObject.SetActive(false);
-            }
-        }
-    }
 
     private void AtualizaValores() {
         if(casas > 0) {
