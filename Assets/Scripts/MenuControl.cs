@@ -1,10 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MenuControl : MonoBehaviour {
-    
+
+    [SerializeField] private long idJogadorVitorioso = 0L;
+    private TextMeshProUGUI txtVitoria;
+
+    private void Awake() {
+        DontDestroyOnLoad(this);
+    }
+
+    public void Update() {
+        if (idJogadorVitorioso != 0L) {
+            txtVitoria = GameObject.Find("JogadorVencedor").GetComponent<TextMeshProUGUI>();
+            if(txtVitoria != null) {
+                txtVitoria.text = "Jogador " + idJogadorVitorioso + " Venceu!";
+            }
+        }
+    }
+
     public void SairDoJogo() {
         Application.Quit();
     }

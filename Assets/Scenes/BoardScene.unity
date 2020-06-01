@@ -339,12 +339,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &56987564
@@ -765,12 +759,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &79728713
@@ -1253,8 +1241,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: -200000
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &100424487
@@ -1480,12 +1466,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &150505661
@@ -1788,8 +1768,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 200000
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &163422331
@@ -2010,12 +1988,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &197906613
@@ -2080,8 +2052,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &241580481
@@ -2146,8 +2116,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 150000
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &255731416
@@ -2903,8 +2871,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &331087290
@@ -3599,12 +3565,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &411882074
@@ -3710,12 +3670,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &453193745
@@ -3936,8 +3890,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &466352663
@@ -4002,8 +3954,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &475137949
@@ -4464,8 +4414,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &558119381
@@ -4530,8 +4478,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &576203300
@@ -4916,8 +4862,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &627970381
@@ -5055,12 +4999,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &652495219
@@ -5229,12 +5167,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &689317987
@@ -5363,12 +5295,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &748102230
@@ -5736,8 +5662,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &817863912
@@ -6286,12 +6210,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &938495953
@@ -6356,12 +6274,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &940108040
@@ -6583,12 +6495,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &980986796
@@ -6653,8 +6559,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &995981244
@@ -6719,8 +6623,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &1000724768
@@ -7152,8 +7054,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &1070011102
@@ -7453,12 +7353,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &1090636859
@@ -7652,8 +7546,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &1209664541
@@ -7840,12 +7732,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &1252967404
@@ -8066,12 +7952,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &1296529433
@@ -8237,12 +8117,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &1338736848
@@ -8307,12 +8181,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &1342117258
@@ -8766,12 +8634,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &1467681896
@@ -8836,8 +8698,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &1475983034
@@ -10035,6 +9895,12 @@ MonoBehaviour:
   txtComprarVender: {fileID: 290901089}
   casaTitulo: {fileID: 125114046}
   casaDescricao: {fileID: 65051686}
+  sprCasas:
+  - {fileID: 1392185753}
+  - {fileID: 303530072}
+  - {fileID: 325974638}
+  sprHoteis:
+  - {fileID: 154326719}
   sorteReves: 0
 --- !u!1 &1678796305
 GameObject:
@@ -10053,7 +9919,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1678796306
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10789,12 +10655,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &1833637921
@@ -11003,12 +10863,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &1935328495
@@ -11543,12 +11397,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
 --- !u!1 &2023243147
@@ -11613,8 +11461,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &2050964830
@@ -11905,8 +11751,6 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas: []
-  sprHoteis: []
   casas: 0
   hotel: 0
 --- !u!1 &2140225170
@@ -11971,11 +11815,5 @@ MonoBehaviour:
   valorConstrucaoHotel: 0
   valorCreditoDebito: 0
   dono: 0
-  sprCasas:
-  - {fileID: 1392185753}
-  - {fileID: 303530072}
-  - {fileID: 325974638}
-  sprHoteis:
-  - {fileID: 154326719}
   casas: 0
   hotel: 0
