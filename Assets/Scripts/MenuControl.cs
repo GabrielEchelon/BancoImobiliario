@@ -14,6 +14,10 @@ public class MenuControl : MonoBehaviour {
     }
 
     public void Update() {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            SairDoJogo();
+        }
+
         if (idJogadorVitorioso != 0L) {
             txtVitoria = GameObject.Find("JogadorVencedor").GetComponent<TextMeshProUGUI>();
             if(txtVitoria != null) {
