@@ -14,8 +14,11 @@ Kanban created in [Trello](https://trello.com/b/tBG1jE8E/bancoimobiliario) in or
 
 ## Ferramentas Utilizadas/Tools
 [Photopea](https://www.photopea.com/)
+
 [Unity Hub](https://unity3d.com/get-unity/download)
+
 [Unity 2019.3.9f1](https://unity3d.com/unity/whats-new/2019.3.9)
+
 [Visual Studio 16.5.4](https://visualstudio.microsoft.com/vs/community/)
 
 ## Compilação/Build
